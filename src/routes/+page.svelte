@@ -52,5 +52,26 @@
     </a>
   </div>
 </header>
-<main />
+<main class="w-full bg-slate-50 flex flex-col align-center p-2">
+  <div
+    class="flex flex-col sm:flex-row justify-center items-center gap-16 bg-slate-800 rounded-3xl p-6 min-h-[500px] text-slate-100 relative"
+  >
+    <div class="flex flex-col gap-8">
+      <Text as="h1">A minimal experience for greater productivity!</Text>
+      <Text as="p"
+        >Have fewer distractions in this minimalistic style text editor.</Text
+      >
+    </div>
+    <div
+      class="w-full aspect-video bg-slate-700 rounded-xl"
+      title="Hero image goes here"
+    />
+    <a
+      href="/demo"
+      class="absolute bottom-8 left-8 shadow-xl shadow-sky-700 transition px-8 py-4 flex justify-center items-center gap-2 no-underline text-sky-100 rounded-lg bg-sky-500 hover:bg-sky-600"
+    >
+      <Text as="span">Start Demo</Text>
+    </a>
+  </div>
+</main>
 <footer />
