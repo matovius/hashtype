@@ -31,6 +31,7 @@
   <div class="p-2">
     <div
       class="w-8 aspect-square border-2 border-slate-300 bg-slate-200 rounded-lg"
+      title="App icon goes here"
     />
   </div>
   <div class="p-2 flex justify-center items-center gap-2">
