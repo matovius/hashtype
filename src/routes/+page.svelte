@@ -45,7 +45,7 @@
     </nav>
     <a
       href="/demo"
-      class="transition px-2 py-1 border-2 flex justify-center items-center gap-2 no-underline border-slate-300 rounded-lg bg-slate-100 hover:border-slate-500 hover:bg-slate-500"
+      class="transition px-2 py-1 border-2 flex justify-center items-center gap-2 no-underline text-slate-600 border-slate-300 rounded-lg bg-slate-100 hover:text-slate-100 hover:border-slate-500 hover:bg-slate-500"
     >
       <Text as="span">Start Demo</Text>
     </a>
