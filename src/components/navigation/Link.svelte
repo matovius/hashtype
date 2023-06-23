@@ -5,7 +5,7 @@
 
 <a
   href={route}
-  class="transition font-medium text-base text-sky-500 underline decoration-sky-100 decoration-2 hover:decoration-sky-300"
+  class="transition font-medium text-base text-sky-500 underline decoration-sky-200 decoration-2 hover:text-sky-700 hover:decoration-sky-500"
 >
   {label}
 </a>
