@@ -59,7 +59,7 @@
     <div class="flex flex-col gap-8">
       <Text as="h1">A minimal experience for greater productivity!</Text>
       <Text as="p"
-        >Have fewer distractions in this minimalistic style text editor.</Text
+        >Have fewer distractions in this minimalist-style text editor.</Text
       >
     </div>
     <div
