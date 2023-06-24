@@ -37,10 +37,28 @@
   </section>
   <section
     id="features"
-    class="text-slate-900 w-full h-screen p-6 flex justify-center items-center"
+    class="text-slate-900 w-full p-6 flex justify-center items-center"
   >
     <div class="w-full h-full max-w-5xl">
       <Text as="h2">Features</Text>
+
+      <div class="w-full flex gap-6 flex-wrap py-6 justify-center items-center">
+        <div
+          class="transition min-w-[320px] min-h-[200px] p-4 rounded-2xl border-2 bg-slate-100 border-slate-300 hover:scale-125 hover:shadow-lg hover:shadow-slate-300"
+        />
+        <div
+          class="transition min-w-[320px] min-h-[200px] p-4 rounded-2xl border-2 bg-slate-100 border-slate-300 hover:scale-125 hover:shadow-lg hover:shadow-slate-300"
+        />
+        <div
+          class="transition min-w-[320px] min-h-[200px] p-4 rounded-2xl border-2 bg-slate-100 border-slate-300 hover:scale-125 hover:shadow-lg hover:shadow-slate-300"
+        />
+        <div
+          class="transition min-w-[320px] min-h-[200px] p-4 rounded-2xl border-2 bg-slate-100 border-slate-300 hover:scale-125 hover:shadow-lg hover:shadow-slate-300"
+        />
+        <div
+          class="transition min-w-[320px] min-h-[200px] p-4 rounded-2xl border-2 bg-slate-100 border-slate-300 hover:scale-125 hover:shadow-lg hover:shadow-slate-300"
+        />
+      </div>
     </div>
   </section>
 </main>
