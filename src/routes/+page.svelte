@@ -34,9 +34,9 @@
       title="App icon goes here"
     />
   </div>
-  <div class="p-2 flex justify-center items-center gap-2">
+  <div class="p-2 flex justify-center items-center gap-4">
     <nav class="flex justify-center items-center">
-      <ul class="flex justify-center items-center gap-2">
+      <ul class="flex justify-center items-center gap-4">
         {#each navItems as navItem}
           <li>
             <Link label={navItem.name} route={navItem.route} />
@@ -55,9 +55,9 @@
 <main class="w-full bg-slate-50 flex justify-center p-8">
   <div class="w-full max-w-5xl flex flex-col justify-center items-center">
     <div
-      class="flex flex-col sm:flex-row justify-center items-center gap-16 bg-slate-800 rounded-3xl p-6 min-h-[500px] text-slate-100 relative"
+      class="min-h-[400px] flex flex-col md:flex-row justify-center items-center gap-12 bg-slate-800 rounded-3xl p-12 text-slate-100 relative"
     >
-      <div class="flex flex-col gap-8">
+      <div class="w-full h-full flex flex-col gap-8 md:pb-24">
         <Text as="h1">A minimal experience for greater productivity!</Text>
         <Text as="p"
           >Have fewer distractions in this minimalist-style text editor.</Text
@@ -69,7 +69,7 @@
       />
       <a
         href="/demo"
-        class="absolute bottom-8 left-8 shadow-xl shadow-sky-700 transition px-8 py-4 flex justify-center items-center gap-2 no-underline text-sky-100 rounded-lg bg-sky-500 hover:bg-sky-600"
+        class="absolute bottom-14 left-14 shadow-xl shadow-sky-700 transition px-8 py-4 flex justify-center items-center gap-2 no-underline text-sky-100 rounded-lg bg-sky-500 hover:bg-sky-400"
       >
         <Text as="span">Start Demo</Text>
       </a>
