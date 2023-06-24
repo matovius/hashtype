@@ -61,5 +61,13 @@
       </div>
     </div>
   </section>
+  <section
+    id="pricing"
+    class="text-slate-900 w-full flex justify-center items-center"
+  >
+    <div class="w-full h-full max-w-5xl">
+      <Text as="h2">Pricing</Text>
+    </div>
+  </section>
 </main>
-<footer />
+<footer class="w-full bg-slate-800 text-slate-100" />
