@@ -3,6 +3,39 @@
 
   import Link from "../components/navigation/Link.svelte";
   import Text from "../components/typography/Text.svelte";
+
+  interface Feature {
+    name: string;
+    description: string;
+  }
+
+  const features: Feature[] = [
+    {
+      name: "Interface",
+      description:
+        "A minimal distraction-free user interface to maximize your productivity",
+    },
+    {
+      name: "Themes",
+      description:
+        "Beautiful light and dark themes with matching syntax highlighting to boot",
+    },
+    {
+      name: "Shortcuts",
+      description:
+        "Amazingly configurable keyboard shortcuts to have all your commands right at your fingertips",
+    },
+    {
+      name: "Search",
+      description:
+        "Advanced searching capability with search filters and document tags",
+    },
+    {
+      name: "Sync",
+      description:
+        "Google Drive, Dropbox, Microsoft OneDrive, and/or your favorite cloud storage service",
+    },
+  ];
 </script>
 
 <Header />
@@ -37,27 +70,22 @@
   </section>
   <section
     id="features"
-    class="text-slate-900 w-full p-6 flex justify-center items-center"
+    class="text-slate-900 w-full px-6 py-24 flex justify-center items-center"
   >
     <div class="w-full h-full max-w-5xl">
-      <Text as="h2">Features</Text>
+      <div class="text-center">
+        <Text as="h2">Features</Text>
+      </div>
 
       <div class="w-full flex gap-6 flex-wrap py-6 justify-center items-center">
-        <div
-          class="transition min-w-[320px] min-h-[200px] p-4 rounded-2xl border-2 bg-slate-100 border-slate-300 hover:scale-125 hover:shadow-lg hover:shadow-slate-300"
-        />
-        <div
-          class="transition min-w-[320px] min-h-[200px] p-4 rounded-2xl border-2 bg-slate-100 border-slate-300 hover:scale-125 hover:shadow-lg hover:shadow-slate-300"
-        />
-        <div
-          class="transition min-w-[320px] min-h-[200px] p-4 rounded-2xl border-2 bg-slate-100 border-slate-300 hover:scale-125 hover:shadow-lg hover:shadow-slate-300"
-        />
-        <div
-          class="transition min-w-[320px] min-h-[200px] p-4 rounded-2xl border-2 bg-slate-100 border-slate-300 hover:scale-125 hover:shadow-lg hover:shadow-slate-300"
-        />
-        <div
-          class="transition min-w-[320px] min-h-[200px] p-4 rounded-2xl border-2 bg-slate-100 border-slate-300 hover:scale-125 hover:shadow-lg hover:shadow-slate-300"
-        />
+        {#each features as feature}
+          <div
+            class="transition w-80 h-40 p-4 rounded-2xl border-2 bg-slate-100 border-slate-300 hover:scale-125 hover:shadow-lg hover: shadow-slate-300"
+          >
+            <Text as="h5">{feature.name}</Text>
+            <Text as="p">{feature.description}</Text>
+          </div>
+        {/each}
       </div>
     </div>
   </section>
