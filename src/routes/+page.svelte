@@ -80,7 +80,7 @@
       <div class="w-full flex gap-6 flex-wrap py-6 justify-center items-center">
         {#each features as feature}
           <div
-            class="transition w-80 h-40 p-4 rounded-2xl border-2 bg-slate-100 border-slate-300 hover:scale-125 hover:shadow-lg hover: shadow-slate-300"
+            class="transition delay-200 w-80 h-40 p-4 rounded-2xl border-2 bg-slate-100 border-slate-300 hover:scale-125 hover:shadow-lg hover: shadow-slate-300"
           >
             <Text as="h5">{feature.name}</Text>
             <Text as="p">{feature.description}</Text>
@@ -100,11 +100,75 @@
 
       <div class="w-full flex gap-6 flex-wrap py-6 justify-center items-center">
         <div
-          class="transition w-80 h-80 p-4 rounded-2xl border-2 border-slate-300 bg-slate-100"
-        />
+          id="basic-card"
+          class="transition delay-200 w-80 h-80 rounded-2xl flex flex-col border-2 border-slate-300 bg-slate-100 overflow-hidden hover:scale-125 hover:z-10"
+        >
+          <div
+            class="p-4 border-b-2 border-slate-300 flex justify-center items-center"
+          >
+            <Text as="h5">Basic</Text>
+          </div>
+          <div
+            class="p-4 h-full flex flex-col justify-center items-center gap-4"
+          >
+            <span class="text-6xl font-bold">FREE</span>
+            <span class="text-sm font-semibold text-slate-500"
+              >No account creation needed</span
+            >
+          </div>
+          <div
+            class="p-4 border-t-2 border-slate-300 flex justify-center items-center"
+          >
+            <a
+              href="/demo"
+              class="transition w-full px-8 py-4 flex justify-center items-center gap-2 no-underline text-sky-100 rounded-lg bg-sky-500 hover:bg-sky-600"
+            >
+              <Text as="span">Start Demo</Text>
+            </a>
+          </div>
+        </div>
         <div
-          class="transition w-80 h-80 p-4 rounded-2xl border-2 border-slate-300 bg-slate-100"
-        />
+          id="premium-card"
+          class="transition w-80 h-80 rounded-2xl flex flex-col border-2 border-slate-300 bg-slate-100 overflow-hidden relative"
+        >
+          <div
+            class="p-4 border-b-2 text-sky-100 border-slate-300 bg-sky-500 flex justify-center items-center"
+          >
+            <Text as="h5">Premium</Text>
+          </div>
+          <div
+            class="p-4 h-full flex flex-col justify-center items-center gap-4"
+          >
+            <span class="text-6xl font-bold">SOON</span>
+            <div class="flex flex-col">
+              <span class="text-sm font-semibold text-slate-500"
+                >Sync across all your devices</span
+              >
+              <span class="text-sm font-semibold text-slate-500"
+                >Accont creation needed</span
+              >
+            </div>
+          </div>
+          <div
+            class="p-4 border-t-2 border-slate-300 flex justify-center items-center"
+          >
+            <a
+              href="/"
+              class="transition w-full px-8 py-4 flex justify-center items-center gap-2 no-underline text-slate-100 rounded-lg bg-slate-500 hover:bg-slate-600"
+            >
+              <Text as="span">Coming Soon</Text>
+            </a>
+          </div>
+          <div
+            class="absolute inset-0 bg-slate-100/95 flex justify-center items-center"
+          >
+            <div
+              class="px-4 py-2 rounded-lg bg-slate-500 border-2 border-slate-300 text-slate-100 flex justify-center items-center"
+            >
+              <Text as="span">Coming Soon</Text>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
