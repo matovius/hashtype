@@ -40,7 +40,7 @@
     <slot />
   </p>
 {:else if as === "span"}
-  <span class="font-regular text-sm text-inherit">
+  <span class="font-bold text-sm text-inherit">
     <slot />
   </span>
 {:else if as === "legend"}
