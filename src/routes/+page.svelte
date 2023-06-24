@@ -88,8 +88,11 @@
       <Text as="p">Scroll down</Text>
     </div>
   </section>
-  <section id="features" class="text-slate-900 w-full min-h-screen p-6">
-    <div class="w-full max-w-5xl">
+  <section
+    id="features"
+    class="text-slate-900 w-full h-screen p-6 flex justify-center items-center"
+  >
+    <div class="w-full h-full max-w-5xl">
       <Text as="h2">Features</Text>
     </div>
   </section>
