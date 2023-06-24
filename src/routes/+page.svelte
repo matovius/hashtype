@@ -54,7 +54,7 @@
     </div>
   </div>
 </header>
-<main class="w-full bg-slate-50 flex flex-col justify-center">
+<main class="w-full bg-slate-50 flex flex-col justify-center scroll-smooth">
   <section
     id="hero-section"
     class="text-slate-100 w-full min-h-screen px-6 pt-[104px] pb-6 bg-slate-800 flex flex-col justify-start items-center gap-10 relative"
@@ -84,6 +84,11 @@
       class="p-2 rounded-lg absolute bottom-6 border-2 border-slate-500 bg-slate-500/50 flex justify-center items-center gap-2"
     >
       <Text as="p">Scroll down</Text>
+    </div>
+  </section>
+  <section id="features" class="text-slate-900 w-full min-h-screen p-6">
+    <div class="w-full max-w-5xl pt-16">
+      <Text as="h2">Features</Text>
     </div>
   </section>
   <div class="w-full max-w-5xl flex flex-col justify-center items-center">
