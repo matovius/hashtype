@@ -25,31 +25,33 @@
     border-slate-300
     bg-slate-100
     flex
-    justify-between
+    justify-center
     items-center"
 >
-  <div class="p-2">
-    <div
-      class="w-8 aspect-square border-2 border-slate-300 bg-slate-200 rounded-lg"
-      title="App icon goes here"
-    />
-  </div>
-  <div class="p-2 flex justify-center items-center gap-4">
-    <nav class="flex justify-center items-center">
-      <ul class="flex justify-center items-center gap-4">
-        {#each navItems as navItem}
-          <li>
-            <Link label={navItem.name} route={navItem.route} />
-          </li>
-        {/each}
-      </ul>
-    </nav>
-    <a
-      href="/demo"
-      class="transition px-4 py-2 border-2 flex justify-center items-center gap-2 no-underline text-sky-600 border-sky-300 rounded-lg bg-sky-100 hover:text-sky-100 hover:border-sky-500 hover:bg-sky-500"
-    >
-      <Text as="span">Start Demo</Text>
-    </a>
+  <div class="w-full max-w-5xl flex justify-between items-center">
+    <div class="p-2">
+      <div
+        class="w-8 aspect-square border-2 border-slate-300 bg-slate-200 rounded-lg"
+        title="App icon goes here"
+      />
+    </div>
+    <div class="p-2 flex justify-center items-center gap-4">
+      <nav class="flex justify-center items-center">
+        <ul class="flex justify-center items-center gap-4">
+          {#each navItems as navItem}
+            <li>
+              <Link label={navItem.name} route={navItem.route} />
+            </li>
+          {/each}
+        </ul>
+      </nav>
+      <a
+        href="/demo"
+        class="transition px-4 py-2 border-2 flex justify-center items-center gap-2 no-underline text-sky-600 border-sky-300 rounded-lg bg-sky-100 hover:text-sky-100 hover:border-sky-500 hover:bg-sky-500"
+      >
+        <Text as="span">Start Demo</Text>
+      </a>
+    </div>
   </div>
 </header>
 <main class="w-full bg-slate-50 flex justify-center p-8">
@@ -69,7 +71,7 @@
       />
       <a
         href="/demo"
-        class="absolute bottom-14 left-14 hover:shadow-lg hover:shadow-sky-700 transition px-8 py-4 flex justify-center items-center gap-2 no-underline text-sky-100 rounded-lg bg-sky-500 hover:bg-sky-400"
+        class="absolute bottom-14 left-14 transition px-8 py-4 flex justify-center items-center gap-2 no-underline text-sky-100 rounded-lg bg-sky-500 hover:shadow-lg hover:shadow-sky-700 hover:bg-sky-400"
       >
         <Text as="span">Start Demo</Text>
       </a>
