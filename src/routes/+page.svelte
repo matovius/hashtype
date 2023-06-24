@@ -43,7 +43,7 @@
   <main class="w-full bg-slate-50 flex flex-col justify-center">
     <section
       id="hero-section"
-      class="text-slate-100 w-full h-full p-6 bg-slate-800 flex flex-col justify-start items-center gap-10 relative"
+      class="text-slate-100 w-full h-full p-20 bg-slate-800 flex flex-col justify-start items-center gap-10 relative"
     >
       <div class="w-full max-w-5xl flex flex-col items-center gap-8 pt-20">
         <div
