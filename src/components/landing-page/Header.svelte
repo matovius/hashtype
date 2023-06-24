@@ -20,13 +20,19 @@
 
 <header
   class="
-    w-full h-20 p-4
+    fixed
+    top-0
+    left-0
+    right-0
+    h-20
+    p-4
     border-b-2
     border-slate-300
     bg-slate-100
     flex
     justify-center
-    items-center sticky top-0 z-10"
+    items-center
+    z-10"
 >
   <div class="w-full max-w-5xl flex justify-between items-center">
     <div>
