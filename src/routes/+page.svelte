@@ -106,10 +106,10 @@
         >
           <div
             id="basic-card"
-            class="transition delay-200 w-80 h-80 rounded-2xl flex flex-col border-2 border-slate-300 bg-slate-100 overflow-hidden hover:scale-125 hover:z-10"
+            class="transition delay-200 w-80 h-80 rounded-2xl flex flex-col border-2 border-slate-300 bg-slate-100 overflow-hidden"
           >
             <div
-              class="p-4 border-b-2 border-slate-300 flex justify-center items-center"
+              class="p-4 border-b-2 border-slate-300 bg-slate-500 text-slate-100 flex justify-center items-center"
             >
               <Text as="h5">Basic</Text>
             </div>
@@ -178,5 +178,13 @@
       </div>
     </section>
   </main>
-  <footer class="w-full bg-slate-800 text-slate-100" />
+  <footer class="w-full bg-slate-800 text-slate-100">
+    <div class="w-full max-w-5xl p-4 flex justify-between align-center">
+      <div
+        class="w-8 aspect-square rounded-lg border-2 border-slate-300 bg-slate-200"
+        title="App icon goes here"
+      />
+      <div class="flex justify-center items-center gap-4" />
+    </div>
+  </footer>
 </div>
