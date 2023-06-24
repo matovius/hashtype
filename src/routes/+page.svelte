@@ -91,10 +91,21 @@
   </section>
   <section
     id="pricing"
-    class="text-slate-900 w-full flex justify-center items-center"
+    class="text-slate-900 w-full px-6 py-24 flex justify-center items-center"
   >
     <div class="w-full h-full max-w-5xl">
-      <Text as="h2">Pricing</Text>
+      <div class="text-center">
+        <Text as="h2">Pricing</Text>
+      </div>
+
+      <div class="w-full flex gap-6 flex-wrap py-6 justify-center items-center">
+        <div
+          class="transition w-80 h-80 p-4 rounded-2xl border-2 border-slate-300 bg-slate-100"
+        />
+        <div
+          class="transition w-80 h-80 p-4 rounded-2xl border-2 border-slate-300 bg-slate-100"
+        />
+      </div>
     </div>
   </section>
 </main>
