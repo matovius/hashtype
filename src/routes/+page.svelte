@@ -34,11 +34,6 @@
         title="Hero image goes here"
       />
     </div>
-    <div
-      class="p-2 rounded-lg absolute bottom-6 right-6 border-2 border-slate-500 bg-slate-500/50 flex justify-center items-center gap-2"
-    >
-      <Text as="p">Scroll down</Text>
-    </div>
   </section>
   <section
     id="features"
