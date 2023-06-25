@@ -36,9 +36,12 @@
     z-10"
 >
   <div class="w-full max-w-5xl flex justify-between items-center">
-    <div>
-      <div class="w-8 aspect-square text-sky-500" title="App icon goes here">
+    <div class="flex justify-center items-center gap-4">
+      <div class="w-8 aspect-square text-sky-500">
         <HashtypeLogo />
+      </div>
+      <div class="hidden sm:inline text-slate-800 dark:text-slate-200">
+        <Text as="h6">Hashtype</Text>
       </div>
     </div>
     <div class="flex justify-center items-center gap-4">
