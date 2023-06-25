@@ -89,7 +89,7 @@
 
 <div>
   <Header />
-  <main class=" flex flex-col justify-center">
+  <main class="text-slate-900 dark:text-slate-100 flex flex-col justify-center">
     <section
       id="hero-section"
       class="text-slate-100 w-full h-full p-20 bg-slate-800 flex flex-col justify-start items-center gap-10 relative"
@@ -120,7 +120,7 @@
     </section>
     <section
       id="features"
-      class="text-slate-900 w-full px-6 py-24 flex justify-center items-center"
+      class="w-full px-6 py-24 flex justify-center items-center"
     >
       <div class="w-full h-full max-w-5xl">
         <div class="text-center">
@@ -132,7 +132,7 @@
         >
           {#each features as feature}
             <div
-              class="transition delay-200 w-80 h-40 p-4 rounded-2xl border-2 bg-slate-100 border-slate-300 hover:scale-110 hover:shadow-lg hover: shadow-slate-300"
+              class="transition delay-200 w-80 h-40 p-4 rounded-2xl border-2 bg-slate-100 dark:bg-slate-800 border-slate-300 dark:border-slate-600 hover:scale-110 hover:shadow-lg hover:shadow-slate-300 dark:hover:shadow-slate-950"
             >
               <Text as="h5">{feature.name}</Text>
               <Text as="p">{feature.description}</Text>
@@ -143,7 +143,7 @@
     </section>
     <section
       id="pricing"
-      class="text-slate-900 w-full px-6 py-24 flex justify-center items-center"
+      class="w-full px-6 py-24 flex justify-center items-center"
     >
       <div class="w-full h-full max-w-5xl">
         <div class="text-center">
@@ -155,10 +155,10 @@
         >
           <div
             id="basic-card"
-            class="transition w-80 h-80 rounded-2xl flex flex-col border-2 border-slate-300 bg-slate-100 overflow-hidden"
+            class="transition w-80 h-80 rounded-2xl flex flex-col border-2 border-slate-300 dark:border-slate-600 bg-slate-100 dark:bg-slate-800 overflow-hidden"
           >
             <div
-              class="p-4 border-b-2 border-slate-300 bg-slate-500 text-slate-100 flex justify-center items-center"
+              class="p-4 border-b-2 border-slate-300 dark:-border-slate-600 bg-slate-500 dark:bg-slate-300 text-slate-100 dark:text-slate-800 flex justify-center items-center"
             >
               <Text as="h5">Basic</Text>
             </div>
@@ -171,11 +171,11 @@
               >
             </div>
             <div
-              class="p-4 border-t-2 border-slate-300 flex justify-center items-center"
+              class="p-4 border-t-2 border-slate-300 dark:border-slate-600 flex justify-center items-center"
             >
               <a
                 href="/"
-                class="transition w-full px-8 py-4 flex justify-center items-center gap-2 no-underline text-sky-100 rounded-lg bg-sky-500 hover:bg-sky-600"
+                class="transition w-full px-8 py-4 flex justify-center items-center gap-2 no-underline text-sky-500 hover:text-sky-100 rounded-lg border-2 border-sky-500 bg-sky-100 hover:bg-sky-500 dark:bg-sky-900 dark:hover:bg-sky-500"
               >
                 <Text as="span">Start Demo</Text>
               </a>
@@ -183,10 +183,10 @@
           </div>
           <div
             id="premium-card"
-            class="transition w-80 h-80 rounded-2xl flex flex-col border-2 border-slate-300 bg-slate-100 overflow-hidden relative"
+            class="transition w-80 h-80 rounded-2xl flex flex-col border-2 border-slate-300 dark:border-slate-600 bg-slate-100 dark:bg-slate-800 overflow-hidden relative"
           >
             <div
-              class="p-4 border-b-2 text-sky-100 border-slate-300 bg-sky-500 flex justify-center items-center"
+              class="p-4 border-b-2 text-sky-100 border-slate-300 dark:border-slate-600 bg-sky-500 flex justify-center items-center"
             >
               <Text as="h5">Premium</Text>
             </div>
@@ -204,7 +204,7 @@
               </div>
             </div>
             <div
-              class="p-4 border-t-2 border-slate-300 flex justify-center items-center"
+              class="p-4 border-t-2 border-slate-300 dark:border-slate-600 flex justify-center items-center"
             >
               <a
                 href="/"
@@ -214,7 +214,7 @@
               </a>
             </div>
             <div
-              class="absolute inset-0 bg-slate-100/95 flex justify-center items-center"
+              class="hidden absolute inset-0 bg-slate-100/95 justify-center items-center"
             >
               <div
                 class="px-4 py-2 rounded-lg bg-slate-500 border-2 border-slate-300 text-slate-100 flex justify-center items-center"
