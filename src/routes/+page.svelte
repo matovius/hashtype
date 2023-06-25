@@ -239,7 +239,7 @@
           title="App icon goes here"
         />
         <button
-          class="transition w-full max-w-sm p-4 rounded-lg border-2 border-slate-500 flex justify-between items-center hover:border-slate-300 hover:bg-slate-700"
+          class="transition w-full max-w-sm p-4 rounded-lg border-2 border-slate-500 hover:border-slate-300 flex justify-between items-center bg-slate-700 hover:bg-slate-600"
         >
           <Text as="span">Theme</Text>
           <SunIcon />
