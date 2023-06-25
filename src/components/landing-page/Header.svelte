@@ -52,7 +52,7 @@
         </ul>
       </nav>
       <a
-        href="/demo"
+        href="/"
         class="transition px-4 py-2 border-2 flex justify-center items-center gap-2 no-underline text-sky-500 border-sky-500 rounded-lg bg-sky-100 hover:bg-sky-500 dark:bg-sky-900 dark:hover:bg-sky-500 hover:text-sky-100"
       >
         <Text as="span">Start Demo</Text>
