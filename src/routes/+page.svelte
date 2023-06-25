@@ -106,7 +106,7 @@
             </Text>
           </div>
           <a
-            href="/demo"
+            href="/"
             class="transition w-full sm:w-fit px-8 py-4 flex justify-center items-center gap-2 no-underline text-sky-100 rounded-lg bg-sky-500 shadow-md shadow-sky-900 hover:shadow-lg hover:shadow-sky-700 hover:bg-sky-400"
           >
             <Text as="span">Start Demo</Text>
