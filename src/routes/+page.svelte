@@ -132,7 +132,7 @@
         >
           {#each features as feature}
             <div
-              class="transition delay-200 w-80 h-40 p-4 rounded-2xl border-2 bg-slate-100 border-slate-300 hover:scale-125 hover:shadow-lg hover: shadow-slate-300"
+              class="transition delay-200 w-80 h-40 p-4 rounded-2xl border-2 bg-slate-100 border-slate-300 hover:scale-110 hover:shadow-lg hover: shadow-slate-300"
             >
               <Text as="h5">{feature.name}</Text>
               <Text as="p">{feature.description}</Text>
