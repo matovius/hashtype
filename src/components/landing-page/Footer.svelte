@@ -4,7 +4,10 @@
   import Text from "../typography/Text.svelte";
 
   let isDarkMode: boolean = false;
-  let themeLabel: string = "Dark Mode";
+  let themeLabel: "Toggle Dark Mode" | "Toggle Light Mode";
+  isDarkMode
+    ? (themeLabel = "Toggle Light Mode")
+    : (themeLabel = "Toggle Dark Mode");
 
   function setTheme() {
     const root: HTMLElement = document.documentElement;
@@ -13,7 +16,9 @@
 
   function toggleTheme() {
     isDarkMode = !isDarkMode;
-    isDarkMode ? (themeLabel = "Light Mode") : (themeLabel = "Dark Mode");
+    isDarkMode
+      ? (themeLabel = "Toggle Light Mode")
+      : (themeLabel = "Toggle Dark Mode");
     setTheme();
   }
 
