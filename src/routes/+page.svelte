@@ -208,7 +208,7 @@
             >
               <a
                 href="/"
-                class="transition w-full px-8 py-4 flex justify-center items-center gap-2 no-underline text-slate-100 rounded-lg bg-slate-500 hover:bg-slate-600"
+                class="transition w-full px-8 py-4 flex justify-center items-center gap-2 no-underline text-slate-100 rounded-lg border-2 border-slate-500 dark:border-slate-500 hover:border-slate-600 bg-slate-500 hover:bg-slate-600"
               >
                 <Text as="span">Coming Soon</Text>
               </a>
