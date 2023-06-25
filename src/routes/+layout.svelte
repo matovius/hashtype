@@ -4,7 +4,6 @@
 </script>
 
 <svelte:head>
-  <title>Hashtype: A Basic Text Editor Made With Svelte</title>
   <link rel="icon" href={logo} type="image/png" />
 </svelte:head>
 

@@ -39,6 +39,10 @@
   ];
 </script>
 
+<svelte:head>
+  <title>Hashtype: A Basic Text Editor Made With Svelte</title>
+</svelte:head>
+
 <div>
   <Header />
   <main class="text-slate-900 dark:text-slate-100 flex flex-col justify-center">
