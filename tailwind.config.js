@@ -4,9 +4,9 @@ export default {
   content: ["./src/**/*.{html,js,svelte,ts}"],
   theme: {
     fontFamily: {
-      display: ['Inter', 'sans-serif'],
-      body: ['Montserrat', 'sans-serif']
-    }
+      display: ["Inter", "sans-serif"],
+      body: ["Montserrat", "sans-serif"],
+    },
     extend: {},
   },
   plugins: [],
