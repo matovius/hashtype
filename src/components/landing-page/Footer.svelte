@@ -2,6 +2,7 @@
   import SunIcon from "../icons/SunIcon.svelte";
   import MoonIcon from "../icons/MoonIcon.svelte";
   import Text from "../typography/Text.svelte";
+  import HashtypeLogo from "../icons/HashtypeLogo.svelte";
 
   let isDarkMode: boolean = false;
   let themeLabel: "Toggle Dark Mode" | "Toggle Light Mode";
@@ -81,10 +82,9 @@
     <div
       class="w-full flex flex-col justify-between sm:justify-center items-center gap-6 sm:gap-2"
     >
-      <div
-        class="w-12 aspect-square rounded-lg border-2 border-slate-300 bg-slate-200"
-        title="App icon goes here"
-      />
+      <div class="w-12 aspect-square text-sky-100" title="App icon goes here">
+        <HashtypeLogo />
+      </div>
       <button
         class="transition w-full max-w-sm p-4 rounded-lg border-2 border-slate-500 hover:border-slate-300 flex justify-between items-center bg-slate-700 hover:bg-slate-600"
         on:click={toggleTheme}

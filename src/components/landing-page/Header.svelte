@@ -1,6 +1,7 @@
 <script lang="ts">
   import Link from "../navigation/Link.svelte";
   import Text from "../typography/Text.svelte";
+  import HashtypeLogo from "../icons/HashtypeLogo.svelte";
 
   interface NavLink {
     name: string;
@@ -36,10 +37,9 @@
 >
   <div class="w-full max-w-5xl flex justify-between items-center">
     <div>
-      <div
-        class="w-8 aspect-square border-2 border-slate-300 bg-slate-200 rounded-lg"
-        title="App icon goes here"
-      />
+      <div class="w-8 aspect-square text-sky-500" title="App icon goes here">
+        <HashtypeLogo />
+      </div>
     </div>
     <div class="flex justify-center items-center gap-4">
       <nav class="flex justify-center items-center">
