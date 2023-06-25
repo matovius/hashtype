@@ -35,14 +35,14 @@
 
   const navItems: NavItem[] = [
     {
-      name: "Notepad",
-      icon: PencilSquareIcon,
-      route: "/notepad",
-    },
-    {
       name: "All Notes",
       icon: DocumentDuplicateIcon,
       route: "/notes",
+    },
+    {
+      name: "Notepad",
+      icon: PencilSquareIcon,
+      route: "/notepad",
     },
     {
       name: "Folders",
@@ -86,6 +86,7 @@
               <a
                 href={navItem.route}
                 class="transition no-underline p-2 flex justify-center items-center border-2 border-slate-300 hover:border-slate-500 dark:border-slate-700 dark:hover:border-slate-500 bg-slate-100 hover:bg-slate-300 dark:bg-slate-900 dark:hover:bg-slate-700 rounded-lg"
+                title={navItem.name}
               >
                 <svelte:component this={navItem.icon} />
               </a>
