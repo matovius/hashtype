@@ -6,6 +6,7 @@ export default {
     fontFamily: {
       display: ["Inter", "sans-serif"],
       body: ["Montserrat", "sans-serif"],
+      mono: ["Mononoki", "monospace"],
     },
     extend: {},
   },
