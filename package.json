@@ -24,6 +24,7 @@
 	"type": "module",
 	"dependencies": {
 		"@fontsource/inter": "^5.0.3",
+		"@fontsource/mononoki": "^5.0.3",
 		"@fontsource/montserrat": "^5.0.3"
 	}
 }
