@@ -31,23 +31,26 @@
     label: string;
     link: string;
   }
+  /**
+   * TODO: Complete these links
+   */
 
   const appLinks: AppLink[] = [
     {
       label: "Releases",
-      route: "/releases",
+      route: "/",
     },
     {
       label: "About",
-      route: "/about",
+      route: "/",
     },
     {
       label: "Contact",
-      route: "/contact",
+      route: "/",
     },
     {
       label: "Legal",
-      route: "/legal",
+      route: "/",
     },
   ];
 
@@ -66,7 +69,7 @@
     },
     {
       label: "LinkedIn",
-      link: "https://linkedin.com/", //TODO: Complete the link here
+      link: "https://linkedin.com/", // TODO: Complete this link
     },
   ];
 </script>
