@@ -214,10 +214,10 @@
               </a>
             </div>
             <div
-              class="hidden absolute inset-0 bg-slate-100/95 justify-center items-center"
+              class="flex absolute inset-0 bg-slate-100/95 dark:bg-slate-900/95 justify-center items-center"
             >
               <div
-                class="px-4 py-2 rounded-lg bg-slate-500 border-2 border-slate-300 text-slate-100 flex justify-center items-center"
+                class="px-4 py-2 rounded-lg bg-slate-500 dark:bg-slate-800 border-2 border-slate-300 dark:border-slate-600 text-slate-200 dark:text-slate-400 flex justify-center items-center"
               >
                 <Text as="span">Coming Soon</Text>
               </div>
