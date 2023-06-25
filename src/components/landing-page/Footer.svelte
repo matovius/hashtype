@@ -1,7 +1,21 @@
 <script lang="ts">
   import SunIcon from "../icons/SunIcon.svelte";
-
+  import MoonIcon from "../icons/MoonIcon.svelte";
   import Text from "../typography/Text.svelte";
+
+  let isDarkMode: boolean = false;
+  let themeLabel: string = "Dark Mode";
+
+  function setTheme() {
+    const root: HTMLElement = document.documentElement;
+    root.classList.toggle("dark");
+  }
+
+  function toggleTheme() {
+    isDarkMode = !isDarkMode;
+    isDarkMode ? (themeLabel = "Light Mode") : (themeLabel = "Dark Mode");
+    setTheme();
+  }
 
   interface AppLink {
     label: string;
@@ -65,9 +79,14 @@
       />
       <button
         class="transition w-full max-w-sm p-4 rounded-lg border-2 border-slate-500 hover:border-slate-300 flex justify-between items-center bg-slate-700 hover:bg-slate-600"
+        on:click={toggleTheme}
       >
-        <Text as="span">Theme</Text>
-        <SunIcon />
+        <Text as="span">{themeLabel}</Text>
+        {#if isDarkMode}
+          <SunIcon />
+        {:else}
+          <MoonIcon />
+        {/if}
       </button>
     </div>
     <div class="w-full flex justify-between align-center">
