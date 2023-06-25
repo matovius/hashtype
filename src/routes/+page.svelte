@@ -10,16 +10,6 @@
     description: string;
   }
 
-  interface AppLink {
-    label: string;
-    route: string;
-  }
-
-  interface ExternalLink {
-    label: string;
-    link: string;
-  }
-
   const features: Feature[] = [
     {
       name: "Interface",
@@ -45,44 +35,6 @@
       name: "Sync",
       description:
         "Google Drive, Dropbox, Microsoft OneDrive, and/or your favorite cloud storage service",
-    },
-  ];
-
-  const appLinks: AppLink[] = [
-    {
-      label: "Releases",
-      route: "/releases",
-    },
-    {
-      label: "About",
-      route: "/about",
-    },
-    {
-      label: "Contact",
-      route: "/contact",
-    },
-    {
-      label: "Legal",
-      route: "/legal",
-    },
-  ];
-
-  const externalLinks: ExternalLink[] = [
-    {
-      label: "GitHub",
-      link: "https://github.com/matovius",
-    },
-    {
-      label: "Mastodon",
-      link: "https://mastodon.social/@matovius",
-    },
-    {
-      label: "Twitter",
-      link: "https://twitter.com/@matovius_",
-    },
-    {
-      label: "LinkedIn",
-      link: "https://linkedin.com/", //TODO: Complete the link here
     },
   ];
 </script>
