@@ -155,7 +155,7 @@
         >
           <div
             id="basic-card"
-            class="transition delay-200 w-80 h-80 rounded-2xl flex flex-col border-2 border-slate-300 bg-slate-100 overflow-hidden"
+            class="transition w-80 h-80 rounded-2xl flex flex-col border-2 border-slate-300 bg-slate-100 overflow-hidden"
           >
             <div
               class="p-4 border-b-2 border-slate-300 bg-slate-500 text-slate-100 flex justify-center items-center"
@@ -165,8 +165,8 @@
             <div
               class="p-4 h-full flex flex-col justify-center items-center gap-4"
             >
-              <span class="text-6xl font-bold">FREE</span>
-              <span class="text-sm font-semibold text-slate-500"
+              <span class="text-6xl font-bold font-display">FREE</span>
+              <span class="text-sm font-semibold font-body text-slate-500"
                 >No account creation needed</span
               >
             </div>
@@ -174,7 +174,7 @@
               class="p-4 border-t-2 border-slate-300 flex justify-center items-center"
             >
               <a
-                href="/demo"
+                href="/"
                 class="transition w-full px-8 py-4 flex justify-center items-center gap-2 no-underline text-sky-100 rounded-lg bg-sky-500 hover:bg-sky-600"
               >
                 <Text as="span">Start Demo</Text>
@@ -193,8 +193,8 @@
             <div
               class="p-4 h-full flex flex-col justify-center items-center gap-4"
             >
-              <span class="text-6xl font-bold">SOON</span>
-              <div class="flex flex-col">
+              <span class="text-6xl font-bold font-display">SOON</span>
+              <div class="flex flex-col font-body">
                 <span class="text-sm font-semibold text-slate-500"
                   >Sync across all your devices</span
                 >
