@@ -59,7 +59,7 @@
 
 <div class="app">
   <aside
-    class="w-20 h-full border-r-2 border-slate-300 dark:border-slate-600 flex flex-col justify-between items-center bg-slate-100 dark:bg-slate-900"
+    class="w-20 h-full border-r-2 border-slate-300 dark:border-slate-600 flex flex-col justify-between items-center bg-slate-100 dark:bg-slate-800"
   >
     <header class="w-full p-2 flex justify-center items-center">
       <button
@@ -71,7 +71,7 @@
       <div />
     </header>
     <main class="w-full h-full">
-      <div class="w-full p-2 flex justify-center items-center">
+      <div class="w-full px-2 py-6 flex justify-center items-center">
         <button
           class="transition p-4 text-sky-500 hover:text-sky-100 border-2 border-sky-300 hover:border-sky-500 dark:border-sky-700 dark:hover:border-sky-500 bg-sky-100 hover:bg-sky-500 dark:bg-sky-900 dark:hover:bg-sky-500 rounded-2xl"
           title="Create New Note"
