@@ -126,7 +126,7 @@
 >
   <div class="w-full max-w-5xl px-4 py-10 flex flex-col gap-12 sm:flex-row">
     <div
-      class="w-full flex flex-col justify-between sm:justify-center items-center gap-6 sm:gap-2"
+      class="w-full flex flex-col justify-between sm:justify-center items-center gap-6"
     >
       <div class="w-12 aspect-square text-sky-100" title="App icon goes here">
         <HashtypeLogo />
