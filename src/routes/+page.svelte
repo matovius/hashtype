@@ -88,7 +88,7 @@
         >
           {#each features as feature}
             <div
-              class="transition delay-200 w-80 h-40 p-4 rounded-2xl border-2 bg-slate-100 dark:bg-slate-800 border-slate-300 dark:border-slate-600 hover:scale-110 hover:shadow-lg hover:shadow-slate-300 dark:hover:shadow-slate-950"
+              class="transition delay-200 w-80 h-40 p-4 flex flex-col gap-4 rounded-2xl border-2 bg-slate-100 dark:bg-slate-800 border-slate-300 dark:border-slate-600 hover:scale-110 hover:shadow-lg hover:shadow-slate-300 dark:hover:shadow-slate-950"
             >
               <Text as="h5">{feature.name}</Text>
               <Text as="p">{feature.description}</Text>
