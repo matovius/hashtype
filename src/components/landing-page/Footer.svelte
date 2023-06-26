@@ -1,26 +1,72 @@
 <script lang="ts">
+  import { browser } from "$app/environment";
   import SunIcon from "../icons/SunIcon.svelte";
   import MoonIcon from "../icons/MoonIcon.svelte";
   import Text from "../typography/Text.svelte";
   import HashtypeLogo from "../icons/HashtypeLogo.svelte";
+  import ComputerDesktopIcon from "../icons/ComputerDesktopIcon.svelte";
 
   let isDarkMode: boolean = false;
   let themeLabel: "Toggle Dark Mode" | "Toggle Light Mode";
+
   isDarkMode
     ? (themeLabel = "Toggle Light Mode")
     : (themeLabel = "Toggle Dark Mode");
 
-  function setTheme() {
+  function setDarkTheme() {
     const root: HTMLElement = document.documentElement;
-    root.classList.toggle("dark");
+    themeLabel = "Toggle Light Mode";
+    root.classList.add("dark");
   }
 
-  function toggleTheme() {
-    isDarkMode = !isDarkMode;
+  function setLightTheme() {
+    const root: HTMLElement = document.documentElement;
+    themeLabel = "Toggle Dark Mode";
+    root.classList.remove("dark");
+  }
+
+  function toggleDarkTheme() {
+    if (isDarkMode === false) {
+      isDarkMode = true;
+      setDarkTheme();
+    }
+  }
+
+  function toggleLightTheme() {
+    if (isDarkMode === true) {
+      isDarkMode = false;
+      setLightTheme();
+    }
+  }
+
+  function togglePreferredTheme() {
+    if (browser) {
+      const root: HTMLElement = document.documentElement;
+      if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        root.classList.add("dark");
+        isDarkMode = true;
+      } else {
+        root.classList.remove("dark");
+        isDarkMode = false;
+      }
+      isDarkMode
+        ? (themeLabel = "Toggle Light Mode")
+        : (themeLabel = "Toggle Dark Mode");
+    }
+  }
+
+  if (browser) {
+    const root: HTMLElement = document.documentElement;
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      root.classList.add("dark");
+      isDarkMode = true;
+    } else {
+      root.classList.remove("dark");
+      isDarkMode = false;
+    }
     isDarkMode
       ? (themeLabel = "Toggle Light Mode")
       : (themeLabel = "Toggle Dark Mode");
-    setTheme();
   }
 
   interface AppLink {
@@ -85,17 +131,31 @@
       <div class="w-12 aspect-square text-sky-100" title="App icon goes here">
         <HashtypeLogo />
       </div>
-      <button
-        class="transition w-full max-w-sm p-4 rounded-lg border-2 border-slate-500 hover:border-slate-300 flex justify-between items-center bg-slate-700 hover:bg-slate-600"
-        on:click={toggleTheme}
+      <div
+        class="w-full max-w-sm rounded-lg border-2 border-slate-500 flex justify-center items-center overflow-hidden"
       >
-        <Text as="span">{themeLabel}</Text>
-        {#if isDarkMode}
+        <button
+          class="w-full flex justify-center items-center p-2 border-r-2 border-slate-500 bg-slate-700 hover:bg-slate-600"
+          on:click={toggleLightTheme}
+          title="Toggle Light Theme"
+        >
           <SunIcon />
-        {:else}
+        </button>
+        <button
+          class="w-full flex justify-center items-center p-2 bg-slate-700 hover:bg-slate-600"
+          on:click={toggleDarkTheme}
+          title="Toggle Dark Theme"
+        >
           <MoonIcon />
-        {/if}
-      </button>
+        </button>
+        <button
+          class="w-full flex justify-center items-center p-2 border-l-2 border-slate-500 bg-slate-700 hover:bg-slate-600"
+          on:click={togglePreferredTheme}
+          title="Toggle System Default"
+        >
+          <ComputerDesktopIcon />
+        </button>
+      </div>
     </div>
     <div class="w-full flex justify-between align-center">
       <div class="w-full">
