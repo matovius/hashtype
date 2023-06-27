@@ -39,22 +39,21 @@
   <title>Hashtype Demo App</title>
 </svelte:head>
 
-<main class="w-full h-full flex justify-center items-center">
+<main class="w-full h-full flex justify-center items-center overflow-y-scroll">
   <div class="flex flex-col gap-12 p-4">
     <div
-      class="text-sky-500 dark:text-slate-300 flex justify-center items-center gap-8"
+      class="text-sky-500 dark:text-slate-300 flex justify-center items-center gap-4 sm:gap-6 md:gap-8"
     >
-      <div class="w-16 aspect-square">
+      <div class="w-8 sm:w-12 md:w-16 aspect-square">
         <HashtypeLogo />
       </div>
-      <Text as="h2">Hashtype Demo</Text>
     </div>
     <div class="flex flex-col justify-center items-center gap-6">
       <Text as="h1">Get Started</Text>
       <div class="flex justify-center items-center gap-4 flex-wrap">
         {#each startingActions as startingAction}
           <button
-            class="outline-none w-full max-w-xs p-4 rounded-xl border-2 border-slate-300 hover:border-slate-500 focus:border-slate-500 dark:border-slate-700 dark:hover:border-slate-500"
+            class="transition outline-none text-left w-full max-w-xs p-4 flex flex-col gap-4 rounded-xl border-2 border-slate-300 hover:border-slate-500 focus:border-slate-500 dark:border-slate-700 dark:hover:border-slate-500 dark:focus:border-slate-500 bg-slate-100 hover:bg-slate-300 focus:bg-slate-300 dark:bg-slate-800 dark:hover:bg-slate-700 dark:focus:bg-slate-700"
           >
             <div class="flex gap-2">
               <svelte:component this={startingAction.icon} />
