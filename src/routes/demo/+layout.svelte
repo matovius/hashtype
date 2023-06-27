@@ -3,7 +3,6 @@
   import Bars2Icon from "../../components/icons/Bars2Icon.svelte";
   import DocumentDuplicateIcon from "../../components/icons/DocumentDuplicateIcon.svelte";
   import FolderIcon from "../../components/icons/FolderIcon.svelte";
-  import PencilIcon from "../../components/icons/PencilIcon.svelte";
   import PencilSquareIcon from "../../components/icons/PencilSquareIcon.svelte";
   import TrashIcon from "../../components/icons/TrashIcon.svelte";
   import SunIcon from "../../components/icons/SunIcon.svelte";
