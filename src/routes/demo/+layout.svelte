@@ -1,4 +1,6 @@
 <script lang="ts">
+  import Footer from "../../components/demo/Footer.svelte";
+
   import Sidebar from "../../components/demo/Sidebar.svelte";
 
   import { browser } from "$app/environment";
@@ -6,6 +8,7 @@
   import FolderIcon from "../../components/icons/FolderIcon.svelte";
   import PencilSquareIcon from "../../components/icons/PencilSquareIcon.svelte";
   import TrashIcon from "../../components/icons/TrashIcon.svelte";
+  import Text from "../../components/typography/Text.svelte";
 
   let isDarkMode: boolean = false;
   let themeLabel: "Toggle Dark Mode" | "Toggle Light Mode";
@@ -58,6 +61,7 @@
   class="app text-slate-800 dark:text-slate-200 flex flex-row justify-center items-center"
 >
   <Sidebar />
+  <Footer />
   <slot />
 </div>
 
