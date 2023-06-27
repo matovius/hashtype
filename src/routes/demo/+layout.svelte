@@ -79,22 +79,22 @@
     {
       name: "Notes",
       icon: DocumentDuplicateIcon,
-      route: "/notes",
+      route: "/demo/notes",
     },
     {
       name: "Notepad",
       icon: PencilSquareIcon,
-      route: "/notepad",
+      route: "/demo/notepad",
     },
     {
       name: "Folders",
       icon: FolderIcon,
-      route: "/folders",
+      route: "/demo/folders",
     },
     {
       name: "Trash",
       icon: TrashIcon,
-      route: "/trash",
+      route: "/demo/trash",
     },
   ];
 </script>
