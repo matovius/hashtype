@@ -23,11 +23,6 @@
       description: "Create a new folder",
     },
     {
-      icon: DocumentPlusIcon,
-      title: "Backup",
-      description: "Restore a saved backup",
-    },
-    {
       icon: PencilSquareIcon,
       title: "Notepad",
       description: "Quickly jot something down",
