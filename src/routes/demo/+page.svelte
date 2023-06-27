@@ -40,7 +40,7 @@
 </svelte:head>
 
 <main class="w-full h-full flex justify-center items-center">
-  <div class="flex flex-col gap-12">
+  <div class="flex flex-col gap-12 p-4">
     <div
       class="text-sky-500 dark:text-slate-300 flex justify-center items-center gap-8"
     >
@@ -54,7 +54,7 @@
       <div class="flex justify-center items-center gap-4 flex-wrap">
         {#each startingActions as startingAction}
           <button
-            class="outline-none w-80 p-4 rounded-xl border-2 border-slate-300 hover:border-slate-500 focus:border-slate-500 dark:border-slate-700 dark:hover:border-slate-500"
+            class="outline-none w-full max-w-xs p-4 rounded-xl border-2 border-slate-300 hover:border-slate-500 focus:border-slate-500 dark:border-slate-700 dark:hover:border-slate-500"
           >
             <div class="flex gap-2">
               <svelte:component this={startingAction.icon} />
