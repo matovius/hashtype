@@ -180,6 +180,7 @@
       </div>
     </footer>
   </aside>
+  <slot />
 </div>
 
 <style>
