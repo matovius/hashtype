@@ -104,7 +104,7 @@
   class="app text-slate-800 dark:text-slate-200 flex flex-row justify-center items-center"
 >
   <aside
-    class="w-20 h-full flex flex-col justify-between items-center gap-4 border-r-2 border-slate-300 dark:border-slate-600 bg-slate-100 dark:bg-slate-800"
+    class="hidden w-20 h-full md:flex flex-col justify-between items-center gap-4 border-r-2 border-slate-300 dark:border-slate-600 bg-slate-100 dark:bg-slate-800"
   >
     <header class="w-full p-2 flex justify-center items-center">
       <button
