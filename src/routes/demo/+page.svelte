@@ -53,7 +53,7 @@
       <div class="flex justify-center items-center gap-4 flex-wrap">
         {#each startingActions as startingAction}
           <button
-            class="transition outline-none text-left w-full max-w-xs p-4 flex flex-col gap-4 rounded-xl border-2 border-slate-300 hover:border-slate-500 focus:border-slate-500 dark:border-slate-700 dark:hover:border-slate-500 dark:focus:border-slate-500 bg-slate-100 hover:bg-slate-300 focus:bg-slate-300 dark:bg-slate-800 dark:hover:bg-slate-700 dark:focus:bg-slate-700"
+            class="transition hover:scale-110 focus:scale-110 outline-none text-left w-full max-w-xs p-4 flex flex-col gap-4 rounded-xl border-2 border-slate-300 hover:border-slate-500 focus:border-slate-500 dark:border-slate-700 dark:hover:border-slate-500 dark:focus:border-slate-500 bg-slate-100 hover:bg-slate-300 focus:bg-slate-300 dark:bg-slate-800 dark:hover:bg-slate-700 dark:focus:bg-slate-700"
           >
             <div class="flex gap-2">
               <svelte:component this={startingAction.icon} />
