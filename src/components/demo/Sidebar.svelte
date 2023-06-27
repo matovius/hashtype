@@ -1,6 +1,5 @@
 <script lang="ts">
   import { browser } from "$app/environment";
-  import Bars2Icon from "../icons/Bars2Icon.svelte";
   import DocumentDuplicateIcon from "../icons/DocumentDuplicateIcon.svelte";
   import FolderIcon from "../icons/FolderIcon.svelte";
   import PencilSquareIcon from "../icons/PencilSquareIcon.svelte";
@@ -9,6 +8,7 @@
   import MoonIcon from "../icons/MoonIcon.svelte";
   import ComputerDesktopIcon from "../icons/ComputerDesktopIcon.svelte";
   import Text from "../typography/Text.svelte";
+  import HashtypeLogo from "../icons/HashtypeLogo.svelte";
 
   let isDarkMode: boolean = false;
   let themeLabel: "Toggle Dark Mode" | "Toggle Light Mode";
@@ -88,19 +88,10 @@
 <aside
   class="hidden w-20 h-full lg:flex flex-col justify-between items-center gap-4 border-r-2 border-slate-300 dark:border-slate-600 bg-slate-100 dark:bg-slate-800"
 >
-  <header class="w-full p-2 flex justify-center items-center">
-    <button
-      class="transition group p-2 flex justify-center items-center border-2 border-slate-500 bg-slate-100 hover:bg-slate-300 dark:bg-slate-900 dark:hover:bg-slate-700 rounded-lg relative"
-      title="Open Navigation"
-    >
-      <Bars2Icon />
-      <div
-        class="transition w-max absolute left-2 group-hover:left-[calc(100%+8px)] hidden group-hover:flex justify-center items-center p-2 rounded-lg border-2 border-slate-300 dark:border-slate-700 bg-slate-100 dark:bg-slate-900"
-      >
-        <Text as="span">Nav Drawer</Text>
-      </div>
-    </button>
-    <div />
+  <header class="w-full p-2 pt-4 flex justify-center items-center">
+    <div class="w-8 aspect-square">
+      <HashtypeLogo />
+    </div>
   </header>
   <main class="w-full h-full">
     <nav class="w-full p-2">
