@@ -26,17 +26,13 @@
   }
 
   function toggleDarkTheme() {
-    if (isDarkMode === false) {
-      isDarkMode = true;
-      setDarkTheme();
-    }
+    isDarkMode = true;
+    setDarkTheme();
   }
 
   function toggleLightTheme() {
-    if (isDarkMode === true) {
-      isDarkMode = false;
-      setLightTheme();
-    }
+    isDarkMode = false;
+    setLightTheme();
   }
 
   function togglePreferredTheme() {
@@ -89,7 +85,7 @@
   class="hidden w-20 h-full lg:flex flex-col justify-between items-center gap-4 border-r-2 border-slate-300 dark:border-slate-600 bg-slate-100 dark:bg-slate-800"
 >
   <header class="w-full p-2 pt-4 flex justify-center items-center">
-    <div class="w-8 aspect-square">
+    <div class="text-sky-500 dark:text-slate-300 w-8 aspect-square">
       <HashtypeLogo />
     </div>
   </header>
