@@ -116,7 +116,7 @@
   <footer class="w-full p-2 flex flex-col justify-center items-center gap-4">
     <div class="flex flex-col justify-center items-center">
       <button
-        class="group flex justify-center items-center p-2 rounded-t-lg border-2 border-b-0 border-slate-500 bg-slate-100 hover:bg-slate-300 dark:bg-slate-900 dark:hover:bg-slate-700 relative"
+        class="transition group flex justify-center items-center p-2 rounded-t-lg border-2 border-b-0 border-slate-500 bg-slate-100 hover:bg-slate-300 dark:bg-slate-900 dark:hover:bg-slate-700 relative"
         on:click={toggleLightTheme}
         title="Toggle Light Theme"
       >
@@ -128,7 +128,7 @@
         </div>
       </button>
       <button
-        class="group flex justify-center items-center p-2 border-2 border-slate-500 bg-slate-100 hover:bg-slate-300 dark:bg-slate-900 dark:hover:bg-slate-700 relative"
+        class="transition group flex justify-center items-center p-2 border-2 border-slate-500 bg-slate-100 hover:bg-slate-300 dark:bg-slate-900 dark:hover:bg-slate-700 relative"
         on:click={toggleDarkTheme}
         title="Toggle Dark Theme"
       >
@@ -140,7 +140,7 @@
         </div>
       </button>
       <button
-        class="group flex justify-center items-center p-2 rounded-b-lg border-2 border-t-0 border-slate-500 bg-slate-100 hover:bg-slate-300 dark:bg-slate-900 dark:hover:bg-slate-700 relative"
+        class="transition group flex justify-center items-center p-2 rounded-b-lg border-2 border-t-0 border-slate-500 bg-slate-100 hover:bg-slate-300 dark:bg-slate-900 dark:hover:bg-slate-700 relative"
         on:click={togglePreferredTheme}
         title="Toggle System Default"
       >
