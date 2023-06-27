@@ -140,41 +140,39 @@
       <div />
     </main>
     <footer class="w-full p-2 flex flex-col justify-center items-center gap-4">
-      <div
-        class="rounded-lg border-2 border-slate-500 flex flex-col justify-center items-center overflow-hidden"
-      >
+      <div class="flex flex-col justify-center items-center">
         <button
-          class="flex justify-center items-center p-2 border-b-2 border-slate-500 bg-slate-100 hover:bg-slate-300 dark:bg-slate-900 dark:hover:bg-slate-700 relative"
+          class="group flex justify-center items-center p-2 rounded-t-lg border-2 border-b-0 border-slate-500 bg-slate-100 hover:bg-slate-300 dark:bg-slate-900 dark:hover:bg-slate-700 relative"
           on:click={toggleLightTheme}
           title="Toggle Light Theme"
         >
           <SunIcon />
           <div
-            class="transition duration-300 delay-200 absolute left-[calc(100%+8px)] hidden group-hover:flex justify-center items-center p-2 rounded-lg border-2 border-slate-300 dark:border-slate-700 bg-slate-100 dark:bg-slate-900"
+            class="transition w-max absolute left-[calc(100%+8px)] hidden group-hover:flex justify-center items-center p-2 rounded-lg border-2 border-slate-300 dark:border-slate-700 bg-slate-100 dark:bg-slate-900"
           >
             <Text as="span">Light Theme</Text>
           </div>
         </button>
         <button
-          class="flex justify-center items-center p-2 bg-slate-100 hover:bg-slate-300 dark:bg-slate-900 dark:hover:bg-slate-700 relative"
+          class="group flex justify-center items-center p-2 border-2 border-slate-500 bg-slate-100 hover:bg-slate-300 dark:bg-slate-900 dark:hover:bg-slate-700 relative"
           on:click={toggleDarkTheme}
           title="Toggle Dark Theme"
         >
           <MoonIcon />
           <div
-            class="transition duration-300 delay-200 absolute left-[calc(100%+8px)] hidden group-hover:flex justify-center items-center p-2 rounded-lg border-2 border-slate-300 dark:border-slate-700 bg-slate-100 dark:bg-slate-900"
+            class="transition w-max absolute left-[calc(100%+8px)] hidden group-hover:flex justify-center items-center p-2 rounded-lg border-2 border-slate-300 dark:border-slate-700 bg-slate-100 dark:bg-slate-900"
           >
             <Text as="span">Dark Theme</Text>
           </div>
         </button>
         <button
-          class="flex justify-center items-center p-2 border-t-2 border-slate-500 bg-slate-100 hover:bg-slate-300 dark:bg-slate-900 dark:hover:bg-slate-700 relative"
+          class="group flex justify-center items-center p-2 rounded-b-lg border-2 border-t-0 border-slate-500 bg-slate-100 hover:bg-slate-300 dark:bg-slate-900 dark:hover:bg-slate-700 relative"
           on:click={togglePreferredTheme}
           title="Toggle System Default"
         >
           <ComputerDesktopIcon />
           <div
-            class="transition duration-300 delay-200 absolute left-[calc(100%+8px)] hidden group-hover:flex justify-center items-center p-2 rounded-lg border-2 border-slate-300 dark:border-slate-700 bg-slate-100 dark:bg-slate-900"
+            class="transition w-max absolute left-[calc(100%+8px)] hidden group-hover:flex justify-center items-center p-2 rounded-lg border-2 border-slate-300 dark:border-slate-700 bg-slate-100 dark:bg-slate-900"
           >
             <Text as="span">System Default</Text>
           </div>
