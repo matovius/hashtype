@@ -37,13 +37,13 @@
 <footer
   class="fixed bottom-0 sm:hidden w-full flex justify-center items-center border-t-2 border-slate-300 dark:border-slate-600 bg-slate-100 dark:bg-slate-800"
 >
-  <nav class="w-full p-4">
-    <ul class="w-full flex justify-between items-center gap-2">
+  <nav class="w-full">
+    <ul class="flex justify-between items-center">
       {#each navItems as navItem}
-        <li class="flex justify-center items-center">
+        <li class="w-full flex justify-center items-center">
           <a
             href={navItem.route}
-            class="transition p-2 flex justify-center items-center border-2 border-slate-500 bg-slate-100 hover:bg-slate-300 dark:bg-slate-900 dark:hover:bg-slate-700 rounded-lg relative"
+            class="transition w-full p-4 flex justify-center items-center bg-transparent hover:bg-slate-300 dark:hover:bg-slate-700"
             title={navItem.name}
           >
             <svelte:component this={navItem.icon} />
