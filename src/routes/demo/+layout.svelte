@@ -24,15 +24,21 @@
   }
 </script>
 
-<div
-  class="app text-slate-800 dark:text-slate-200 flex flex-row justify-center items-center"
->
+<div class="app text-slate-800 dark:text-slate-200">
+  <header class="w-full h-20 bg-slate-800">
+    <div />
+  </header>
   <slot />
+  <footer class="w-full bg-slate-800">
+    <div />
+  </footer>
 </div>
 
 <style>
   .app {
     width: 100vw;
     height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
   }
 </style>
