@@ -23,15 +23,20 @@
 
   let sidebarModal: HTMLDialogElement;
 
-  onMount(() => {
+  function openSidebarModal() {
     sidebarModal.showModal();
-  });
+  }
+
+  function closeSidebarModal() {
+    sidebarModal.close();
+  }
 </script>
 
 <div class="app text-slate-800 dark:text-slate-200">
   <header class="w-full bg-slate-800 flex justify-between items-center">
     <div class="p-4">
       <button
+        on:click={openSidebarModal}
         class="transition outline-none p-2 flex justify-center items-center rounded-lg bg-transparent hover:bg-slate-300 dark:hover:bg-slate-700 focus:bg-slate-300 dark:focus:bg-slate-700"
       >
         <Bars2Icon />
@@ -39,7 +44,7 @@
       <dialog bind:this={sidebarModal} class="border-0 bg-transparent relative">
         <div class="fixed inset-0 bg-slate-800/50 backdrop-blur-[8px]" />
         <div class="fixed top-0 left-0 bottom-0 w-4/5 sm:w-80">
-          <Sidebar />
+          <Sidebar on:close={closeSidebarModal} />
           <div />
         </div>
       </dialog>
