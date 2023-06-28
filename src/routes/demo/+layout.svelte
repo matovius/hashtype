@@ -33,7 +33,9 @@
 </script>
 
 <div class="app text-slate-800 dark:text-slate-200">
-  <header class="w-full bg-slate-800 flex justify-between items-center">
+  <header
+    class="w-full flex justify-between items-center border-b-2 border-slate-300 dark:border-slate-700 bg-slate-200 dark:bg-slate-800"
+  >
     <div class="p-4">
       <button
         on:click={openSidebarModal}
