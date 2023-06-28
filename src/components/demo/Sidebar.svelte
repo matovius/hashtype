@@ -54,7 +54,7 @@
 </script>
 
 <div
-  class="w-80 h-full flex flex-col justify-between items-center gap-4 border-r-2 border-slate-300 dark:border-slate-600 bg-slate-100 dark:bg-slate-800"
+  class="w-full h-full flex flex-col justify-between items-center gap-4 border-r-2 border-slate-300 dark:border-slate-600 bg-slate-100 dark:bg-slate-800"
 >
   <header class="w-full p-4 flex justify-between items-center">
     <div class="text-sky-500 dark:text-slate-300 w-8 aspect-square">
