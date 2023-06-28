@@ -68,7 +68,7 @@
         on:click={() => {
           dispatch("close");
         }}
-        class="transition p-2 flex justify-center items-center rounded-lg bg-transparent hover:bg-slate-300 dark:hover:bg-slate-700"
+        class="transition p-2 flex justify-center items-center rounded-lg bg-transparent hover:bg-slate-300 dark:hover:bg-slate-700 focus:bg-slate-300 dark:focus:bg-slate-700"
       >
         <XMarkIcon />
       </button>
@@ -79,7 +79,7 @@
       <ul class="flex flex-col">
         <li class="w-full flex justify-center items-center">
           <button
-            class={`transition text-sky-500 hover:text-sky-100 w-full p-4 flex justify-start items-center gap-4 rounded-lg border-sky-500 bg-transparent hover:bg-sky-500`}
+            class={`transition text-sky-500 hover:text-sky-50 focus:text-sky-50 w-full p-4 flex justify-start items-center gap-4 rounded-lg bg-transparent hover:bg-sky-500 focus:bg-sky-500 dark:hover:bg-sky-700 dark:focus:bg-sky-700`}
             title="Create a new note"
           >
             <DocumentPlusIcon />
@@ -88,7 +88,7 @@
         </li>
         <li class="w-full flex justify-center items-center">
           <button
-            class={`transition w-full p-4 flex justify-start items-center gap-4 rounded-lg border-slate-300 hover:border-slate-500 dark:border-slate-700 dark:hover:border-slate-500 bg-transparent hover:bg-slate-300 dark:hover:bg-slate-700`}
+            class={`transition w-full p-4 flex justify-start items-center gap-4 rounded-lg bg-transparent hover:bg-slate-300 focus:bg-slate-300 dark:hover:bg-slate-700 dark:focus:bg-slate-700`}
             title="Open Notepad"
           >
             <PencilSquareIcon />
@@ -97,7 +97,7 @@
         </li>
         <li class="w-full flex justify-center items-center">
           <button
-            class={`transition w-full p-4 flex justify-start items-center gap-4 rounded-lg border-slate-300 hover:border-slate-500 dark:border-slate-700 dark:hover:border-slate-500 bg-transparent hover:bg-slate-300 dark:hover:bg-slate-700`}
+            class={`transition w-full p-4 flex justify-start items-center gap-4 rounded-lg bg-transparent hover:bg-slate-300 focus:bg-slate-300 dark:hover:bg-slate-700 dark:focus:bg-slate-700`}
             title="Open Folders"
           >
             <FolderIcon />
@@ -106,7 +106,7 @@
         </li>
         <li class="w-full flex justify-center items-center">
           <button
-            class={`transition text-rose-500 hover:text-rose-100 w-full p-4 flex justify-start items-center gap-4 rounded-lg border-rose-300 hover:border-rose-500 dark:border-rose-700 dark:hover:border-rose-500 bg-transparent hover:bg-rose-300 dark:hover:bg-rose-700`}
+            class={`transition text-rose-500 hover:text-rose-50 focus:text-rose-50 w-full p-4 flex justify-start items-center gap-4 rounded-lg bg-transparent hover:bg-rose-500 focus:bg-rose-500 dark:hover:bg-rose-700 dark:focus:bg-rose-700`}
             title="Open Trash"
           >
             <TrashIcon />
@@ -121,21 +121,21 @@
   <footer class="w-full p-2 flex flex-col justify-center items-center gap-4">
     <div class="flex flex-row justify-center items-center">
       <button
-        class="transition group flex justify-center items-center p-4 rounded-lg bg-transparent hover:bg-slate-300 dark:hover:bg-slate-700"
+        class="transition group flex justify-center items-center p-4 rounded-lg bg-transparent hover:bg-slate-300 focus:bg-slate-300 dark:hover:bg-slate-700 dark:focus:bg-slate-700"
         on:click={toggleLightTheme}
         title="Toggle Light Theme"
       >
         <SunIcon />
       </button>
       <button
-        class="transition group flex justify-center items-center p-4 rounded-lg bg-transparent hover:bg-slate-300 dark:hover:bg-slate-700"
+        class="transition group flex justify-center items-center p-4 rounded-lg bg-transparent hover:bg-slate-300 focus:bg-slate-300 dark:hover:bg-slate-700 dark:focus:bg-slate-700"
         on:click={toggleDarkTheme}
         title="Toggle Dark Theme"
       >
         <MoonIcon />
       </button>
       <button
-        class="transition group flex justify-center items-center p-4 rounded-lg bg-transparent hover:bg-slate-300 dark:hover:bg-slate-700"
+        class="transition group flex justify-center items-center p-4 rounded-lg bg-transparent hover:bg-slate-300 focus:bg-slate-300 dark:hover:bg-slate-700 dark:focus:bg-slate-700"
         on:click={togglePreferredTheme}
         title="Toggle System Default"
       >
