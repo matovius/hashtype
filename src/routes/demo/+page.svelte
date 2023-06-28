@@ -39,7 +39,7 @@
     <div
       class="text-sky-500 dark:text-slate-300 flex justify-center items-center gap-4 sm:gap-6 md:gap-8"
     >
-      <div class="w-8 sm:w-12 md:w-16 aspect-square">
+      <div class="w-16 aspect-square">
         <HashtypeLogo />
       </div>
     </div>
