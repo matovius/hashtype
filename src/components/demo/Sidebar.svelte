@@ -1,6 +1,5 @@
 <script lang="ts">
   import { browser } from "$app/environment";
-  import DocumentDuplicateIcon from "../icons/DocumentDuplicateIcon.svelte";
   import FolderIcon from "../icons/FolderIcon.svelte";
   import PencilSquareIcon from "../icons/PencilSquareIcon.svelte";
   import TrashIcon from "../icons/TrashIcon.svelte";
@@ -53,35 +52,6 @@
         : (themeLabel = "Toggle Dark Mode");
     }
   }
-
-  interface NavItem {
-    name: string;
-    icon: any;
-    route: string;
-  }
-
-  const navItems: NavItem[] = [
-    {
-      name: "Notes",
-      icon: DocumentDuplicateIcon,
-      route: "/demo/notes",
-    },
-    {
-      name: "Notepad",
-      icon: PencilSquareIcon,
-      route: "/demo/notepad",
-    },
-    {
-      name: "Folders",
-      icon: FolderIcon,
-      route: "/demo/folders",
-    },
-    {
-      name: "Trash",
-      icon: TrashIcon,
-      route: "/demo/trash",
-    },
-  ];
 </script>
 
 <div
