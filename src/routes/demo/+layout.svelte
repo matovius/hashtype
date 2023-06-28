@@ -1,11 +1,6 @@
 <script lang="ts">
   import { browser } from "$app/environment";
   import Bars2Icon from "../../components/icons/Bars2Icon.svelte";
-  import DocumentDuplicateIcon from "../../components/icons/DocumentDuplicateIcon.svelte";
-  import FolderIcon from "../../components/icons/FolderIcon.svelte";
-  import PencilSquareIcon from "../../components/icons/PencilSquareIcon.svelte";
-  import TrashIcon from "../../components/icons/TrashIcon.svelte";
-  import Text from "../../components/typography/Text.svelte";
 
   let isDarkMode: boolean = false;
   let themeLabel: "Toggle Dark Mode" | "Toggle Light Mode";
