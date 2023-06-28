@@ -1,5 +1,6 @@
 <script lang="ts">
   import { browser } from "$app/environment";
+  import { createEventDispatcher } from "svelte";
   import FolderIcon from "../icons/FolderIcon.svelte";
   import PencilSquareIcon from "../icons/PencilSquareIcon.svelte";
   import TrashIcon from "../icons/TrashIcon.svelte";
@@ -10,6 +11,8 @@
   import HashtypeLogo from "../icons/HashtypeLogo.svelte";
   import DocumentPlusIcon from "../icons/DocumentPlusIcon.svelte";
   import XMarkIcon from "../icons/XMarkIcon.svelte";
+
+  let dispatch = createEventDispatcher();
 
   let isDarkMode: boolean = false;
   let themeLabel: "Toggle Dark Mode" | "Toggle Light Mode";
@@ -62,6 +65,9 @@
     </div>
     <div>
       <button
+        on:click={() => {
+          dispatch("close");
+        }}
         class="transition p-2 flex justify-center items-center rounded-lg bg-transparent hover:bg-slate-300 dark:hover:bg-slate-700"
       >
         <XMarkIcon />
