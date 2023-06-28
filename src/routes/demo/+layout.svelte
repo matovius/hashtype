@@ -2,6 +2,7 @@
   import { browser } from "$app/environment";
   import { onMount } from "svelte";
   import Bars2Icon from "../../components/icons/Bars2Icon.svelte";
+  import Sidebar from "../../components/demo/Sidebar.svelte";
 
   let isDarkMode: boolean = false;
   let themeLabel: "Toggle Dark Mode" | "Toggle Light Mode";
@@ -37,7 +38,8 @@
       </button>
       <dialog bind:this={sidebarModal} class="border-0 bg-transparent relative">
         <div class="fixed inset-0 bg-slate-800/50 backdrop-blur-[8px]" />
-        <div class="fixed top-0 right-0 bottom-0 w-4/5 sm:w-80">
+        <div class="fixed top-0 left-0 bottom-0 w-4/5 sm:w-80">
+          <Sidebar />
           <div />
         </div>
       </dialog>
