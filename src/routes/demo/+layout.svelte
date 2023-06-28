@@ -1,5 +1,6 @@
 <script lang="ts">
   import { browser } from "$app/environment";
+  import Bars2Icon from "../../components/icons/Bars2Icon.svelte";
   import DocumentDuplicateIcon from "../../components/icons/DocumentDuplicateIcon.svelte";
   import FolderIcon from "../../components/icons/FolderIcon.svelte";
   import PencilSquareIcon from "../../components/icons/PencilSquareIcon.svelte";
@@ -25,7 +26,14 @@
 </script>
 
 <div class="app text-slate-800 dark:text-slate-200">
-  <header class="w-full h-20 bg-slate-800">
+  <header class="w-full bg-slate-800 flex justify-between items-center">
+    <div class="p-4">
+      <button
+        class="transition outline-none p-2 flex justify-center items-center rounded-lg bg-transparent hover:bg-slate-300 dark:hover:bg-slate-700 focus:bg-slate-300 dark:focus:bg-slate-700"
+      >
+        <Bars2Icon />
+      </button>
+    </div>
     <div />
   </header>
   <slot />
