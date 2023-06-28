@@ -44,7 +44,10 @@
         <Bars2Icon />
       </button>
       <dialog bind:this={sidebarModal} class="border-0 bg-transparent relative">
-        <div class="fixed inset-0 bg-slate-800/50 backdrop-blur-[8px]" />
+        <div
+          class="fixed inset-0 bg-slate-800/50 backdrop-blur-[8px]"
+          on:click={closeSidebarModal}
+        />
         <div class="fixed top-0 left-0 bottom-0 w-4/5 sm:w-80">
           <Sidebar on:close={closeSidebarModal} />
           <div />
