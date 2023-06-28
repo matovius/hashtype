@@ -8,7 +8,6 @@
   import ComputerDesktopIcon from "../icons/ComputerDesktopIcon.svelte";
   import Text from "../typography/Text.svelte";
   import HashtypeLogo from "../icons/HashtypeLogo.svelte";
-  import PencilIcon from "../icons/PencilIcon.svelte";
   import DocumentPlusIcon from "../icons/DocumentPlusIcon.svelte";
   import XMarkIcon from "../icons/XMarkIcon.svelte";
 
