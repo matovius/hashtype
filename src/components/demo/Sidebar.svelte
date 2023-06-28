@@ -96,15 +96,10 @@
           <li class="flex justify-center items-center">
             <a
               href={navItem.route}
-              class="transition group p-2 flex justify-center items-center border-2 border-slate-500 bg-slate-100 hover:bg-slate-300 dark:bg-slate-900 dark:hover:bg-slate-700 rounded-lg relative"
+              class={`transition p-2 flex justify-center items-center rounded-lg border-2 border-slate-300 hover:border-slate-500 dark:border-slate-700 dark:hover:border-slate-500 bg-transparent hover:bg-slate-300 dark:hover:bg-slate-700`}
               title={navItem.name}
             >
               <svelte:component this={navItem.icon} />
-              <div
-                class="transition w-max absolute left-2 group-hover:left-[calc(100%+8px)] hidden group-hover:flex justify-center items-center p-2 rounded-lg border-2 border-slate-300 dark:border-slate-700 bg-slate-100 dark:bg-slate-900"
-              >
-                <Text as="span">{navItem.name}</Text>
-              </div>
             </a>
           </li>
         {/each}
@@ -116,48 +111,26 @@
   <footer class="w-full p-2 flex flex-col justify-center items-center gap-4">
     <div class="flex flex-col justify-center items-center">
       <button
-        class="transition group flex justify-center items-center p-2 rounded-t-lg border-2 border-b-0 border-slate-500 bg-slate-100 hover:bg-slate-300 dark:bg-slate-900 dark:hover:bg-slate-700 relative"
+        class="transition group flex justify-center items-center p-2 rounded-t-lg border-2 border-b-0 border-slate-500 bg-transparent hover:bg-slate-300 dark:hover:bg-slate-700"
         on:click={toggleLightTheme}
         title="Toggle Light Theme"
       >
         <SunIcon />
-        <div
-          class="transition w-max absolute left-[calc(100%+8px)] hidden group-hover:flex justify-center items-center p-2 rounded-lg border-2 border-slate-300 dark:border-slate-700 bg-slate-100 dark:bg-slate-900"
-        >
-          <Text as="span">Light Theme</Text>
-        </div>
       </button>
       <button
-        class="transition group flex justify-center items-center p-2 border-2 border-slate-500 bg-slate-100 hover:bg-slate-300 dark:bg-slate-900 dark:hover:bg-slate-700 relative"
+        class="transition group flex justify-center items-center p-2 border-2 border-slate-500 bg-transparent hover:bg-slate-300 dark:hover:bg-slate-700"
         on:click={toggleDarkTheme}
         title="Toggle Dark Theme"
       >
         <MoonIcon />
-        <div
-          class="transition w-max absolute left-[calc(100%+8px)] hidden group-hover:flex justify-center items-center p-2 rounded-lg border-2 border-slate-300 dark:border-slate-700 bg-slate-100 dark:bg-slate-900"
-        >
-          <Text as="span">Dark Theme</Text>
-        </div>
       </button>
       <button
-        class="transition group flex justify-center items-center p-2 rounded-b-lg border-2 border-t-0 border-slate-500 bg-slate-100 hover:bg-slate-300 dark:bg-slate-900 dark:hover:bg-slate-700 relative"
+        class="transition group flex justify-center items-center p-2 rounded-b-lg border-2 border-t-0 border-slate-500 bg-transparent hover:bg-slate-300 dark:hover:bg-slate-700"
         on:click={togglePreferredTheme}
         title="Toggle System Default"
       >
         <ComputerDesktopIcon />
-        <div
-          class="transition w-max absolute left-[calc(100%+8px)] hidden group-hover:flex justify-center items-center p-2 rounded-lg border-2 border-slate-300 dark:border-slate-700 bg-slate-100 dark:bg-slate-900"
-        >
-          <Text as="span">System Default</Text>
-        </div>
       </button>
     </div>
   </footer>
 </aside>
-
-<style>
-  .app {
-    width: 100vw;
-    height: 100vh;
-  }
-</style>
