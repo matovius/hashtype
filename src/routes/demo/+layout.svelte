@@ -22,35 +22,6 @@
       ? (themeLabel = "Toggle Light Mode")
       : (themeLabel = "Toggle Dark Mode");
   }
-
-  interface NavItem {
-    name: string;
-    icon: any;
-    route: string;
-  }
-
-  const navItems: NavItem[] = [
-    {
-      name: "Notes",
-      icon: DocumentDuplicateIcon,
-      route: "/demo/notes",
-    },
-    {
-      name: "Notepad",
-      icon: PencilSquareIcon,
-      route: "/demo/notepad",
-    },
-    {
-      name: "Folders",
-      icon: FolderIcon,
-      route: "/demo/folders",
-    },
-    {
-      name: "Trash",
-      icon: TrashIcon,
-      route: "/demo/trash",
-    },
-  ];
 </script>
 
 <div
