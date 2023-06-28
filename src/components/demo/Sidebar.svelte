@@ -79,6 +79,9 @@
       <ul class="flex flex-col">
         <li class="w-full flex justify-center items-center">
           <button
+            on:click={() => {
+              dispatch("newnote");
+            }}
             class={`transition text-sky-500 hover:text-sky-50 focus:text-sky-50 w-full p-4 flex justify-start items-center gap-4 rounded-lg bg-transparent hover:bg-sky-500 focus:bg-sky-500 dark:hover:bg-sky-700 dark:focus:bg-sky-700`}
             title="Create a new note"
           >
