@@ -1,8 +1,4 @@
 <script lang="ts">
-  import Footer from "../../components/demo/Footer.svelte";
-
-  import Sidebar from "../../components/demo/Sidebar.svelte";
-
   import { browser } from "$app/environment";
   import DocumentDuplicateIcon from "../../components/icons/DocumentDuplicateIcon.svelte";
   import FolderIcon from "../../components/icons/FolderIcon.svelte";
@@ -60,8 +56,6 @@
 <div
   class="app text-slate-800 dark:text-slate-200 flex flex-row justify-center items-center"
 >
-  <Sidebar />
-  <Footer />
   <slot />
 </div>
 
