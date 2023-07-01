@@ -4,6 +4,8 @@
 
   import Link from "../components/navigation/Link.svelte";
   import Text from "../components/typography/Text.svelte";
+  import LinkButton from "../components/buttons/LinkButton.svelte";
+  import ArrowLeftIcon from "../components/icons/ArrowLeftIcon.svelte";
 
   interface Feature {
     name: string;
@@ -48,7 +50,7 @@
   <main class="flex flex-col justify-center">
     <section
       id="hero-section"
-      class="text-slate-100 w-full h-full p-20 bg-slate-800 flex flex-col justify-start items-center gap-10 relative"
+      class="text-slate-100 w-full h-full p-20 bg-sky-950 flex flex-col justify-start items-center gap-10 relative"
     >
       <div class="w-full max-w-5xl flex flex-col items-center gap-8 pt-20">
         <div
@@ -61,12 +63,13 @@
               for greater productivity
             </Text>
           </div>
-          <a
-            href="/"
-            class="transition w-full sm:w-fit px-8 py-4 flex justify-center items-center gap-2 no-underline text-sky-100 rounded-lg bg-sky-500 shadow-md shadow-sky-900 hover:shadow-lg hover:shadow-sky-700 hover:bg-sky-400"
-          >
-            <Text as="span">Start Demo</Text>
-          </a>
+          <LinkButton
+            link="/demo"
+            textLabel="Start Demo"
+            endIcon={ArrowLeftIcon}
+            variant="primary"
+            size="large"
+          />
         </div>
         <div
           class="w-full min-w-[320px] max-w-lg aspect-video bg-slate-700 rounded-xl"
@@ -129,12 +132,12 @@
             <div
               class="p-4 border-t-2 border-slate-300 dark:border-slate-600 flex justify-center items-center"
             >
-              <a
-                href="/"
-                class="transition w-full px-8 py-4 flex justify-center items-center gap-2 no-underline text-sky-500 hover:text-sky-100 rounded-lg border-2 border-sky-500 bg-sky-100 hover:bg-sky-500 dark:bg-sky-900 dark:hover:bg-sky-500"
-              >
-                <Text as="span">Start Demo</Text>
-              </a>
+              <LinkButton
+                link="/demo"
+                textLabel="Start"
+                width="container"
+                size="medium"
+              />
             </div>
           </div>
           <div

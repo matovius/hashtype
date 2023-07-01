@@ -60,7 +60,7 @@
 </script>
 
 <button
-  class={`transition outline-none ease-in flex justify-center items-center border-2 ${buttonSize} ${buttonVariant}`}
+  class={`transition outline-none ease-in flex justify-center items-center border-2 ${buttonWidth} ${buttonSize} ${buttonVariant}`}
   on:click
 >
   {#if startIcon !== null}
