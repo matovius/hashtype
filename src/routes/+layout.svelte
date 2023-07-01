@@ -7,6 +7,6 @@
   <link rel="icon" href={logo} type="image/png" />
 </svelte:head>
 
-<div class="bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-slate-100">
+<div class="bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-200">
   <slot />
 </div>

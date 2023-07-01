@@ -1,6 +1,5 @@
 <script lang="ts">
-  import Text from "../typography/Text.svelte";
-
+  export let icon: any;
   export let size: "small" | "medium" | "large" = "small";
   export let variant:
     | "primary"
@@ -8,23 +7,16 @@
     | "success"
     | "warning"
     | "error" = "secondary";
-  export let startIcon: any = null;
-  export let endIcon: any = null;
-  export let width: "content" | "container" = "content";
-  export let textLabel: string;
-  export let align: "start" | "center" | "end" = "start";
 
-  let buttonSize: string;
+  let buttonPadding: string;
   let buttonVariant: string;
-  let buttonWidth: string;
-  let textAlign: string;
 
   if (size === "small") {
-    buttonSize = "gap-2 rounded-md px-2 py-1";
+    buttonPadding = "rounded-md p-1";
   } else if (size === "medium") {
-    buttonSize = "gap-4 rounded-lg px-4 py-2";
+    buttonPadding = "rounded-lg p-2";
   } else if (size === "large") {
-    buttonSize = "gap-6 rounded-xl px-8 py-4";
+    buttonPadding = "rounded-xl p-4";
   }
 
   if (variant === "primary") {
@@ -43,33 +35,11 @@
     buttonVariant =
       "text-rose-500 hover:text-rose-100 focus:text-rose-100 border-rose-500 bg-rose-100 hover:bg-rose-500 focus:bg-rose-500 dark:bg-rose-900 dark:hover:bg-rose-500 dark:focus:bg-rose-500";
   }
-
-  if (width === "container") {
-    buttonWidth = "w-full";
-  } else if (width === "content") {
-    buttonWidth = "w-fit";
-  }
-
-  if (align === "start") {
-    textAlign = "text-start";
-  } else if (align === "center") {
-    textAlign = "text-center";
-  } else if (align === "end") {
-    textAlign = "text-end";
-  }
 </script>
 
 <button
-  class={`transition outline-none ease-in flex justify-center items-center border-2 ${buttonSize} ${buttonVariant}`}
+  class={`transition outline-none ease-in flex justify-center items-center border-2 ${buttonPadding} ${buttonVariant}`}
   on:click
 >
-  {#if startIcon !== null}
-    <svelte:component this={startIcon} />
-  {/if}
-  <div class={`${textAlign}`}>
-    <Text as="span">{textLabel}</Text>
-  </div>
-  {#if endIcon !== null}
-    <svelte:component this={endIcon} />
-  {/if}
+  <svelte:component this={icon} />
 </button>

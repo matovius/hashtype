@@ -45,7 +45,7 @@
 
 <div>
   <Header />
-  <main class="text-slate-900 dark:text-slate-100 flex flex-col justify-center">
+  <main class="flex flex-col justify-center">
     <section
       id="hero-section"
       class="text-slate-100 w-full h-full p-20 bg-slate-800 flex flex-col justify-start items-center gap-10 relative"

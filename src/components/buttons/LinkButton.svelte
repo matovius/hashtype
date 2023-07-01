@@ -1,6 +1,7 @@
 <script lang="ts">
   import Text from "../typography/Text.svelte";
 
+  export let link: string = "/";
   export let size: "small" | "medium" | "large" = "small";
   export let variant:
     | "primary"
@@ -59,9 +60,9 @@
   }
 </script>
 
-<button
+<a
+  href={link}
   class={`transition outline-none ease-in flex justify-center items-center border-2 ${buttonSize} ${buttonVariant}`}
-  on:click
 >
   {#if startIcon !== null}
     <svelte:component this={startIcon} />
@@ -72,4 +73,4 @@
   {#if endIcon !== null}
     <svelte:component this={endIcon} />
   {/if}
-</button>
+</a>
