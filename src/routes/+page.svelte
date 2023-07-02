@@ -114,50 +114,25 @@
         <div
           class="w-full flex gap-6 flex-wrap py-6 justify-center items-center"
         >
-          <PricingCard cardID="basic-pricing-card" variant="secondary" />
-          <div
-            inert
-            id="premium-card"
-            class="transition w-80 h-80 rounded-2xl flex flex-col border-2 border-slate-300 dark:border-slate-600 bg-slate-100 dark:bg-slate-800 overflow-hidden relative"
-          >
-            <div
-              class="p-4 border-b-2 text-sky-100 border-slate-300 dark:border-slate-600 bg-sky-500 flex justify-center items-center"
-            >
-              <Text as="h5">Premium</Text>
-            </div>
-            <div
-              class="p-4 h-full flex flex-col justify-center items-center gap-4"
-            >
-              <span class="text-6xl font-bold font-display">SOON</span>
-              <div class="flex flex-col font-body">
-                <span class="text-sm font-semibold text-slate-500"
-                  >Sync across all your devices</span
-                >
-                <span class="text-sm font-semibold text-slate-500"
-                  >Accont creation needed</span
-                >
-              </div>
-            </div>
-            <div
-              class="p-4 border-t-2 border-slate-300 dark:border-slate-600 flex justify-center items-center"
-            >
-              <a
-                href="/"
-                class="transition w-full px-8 py-4 flex justify-center items-center gap-2 no-underline text-slate-100 rounded-lg border-2 border-slate-500 dark:border-slate-500 hover:border-slate-600 bg-slate-500 hover:bg-slate-600"
-              >
-                <Text as="span">Coming Soon</Text>
-              </a>
-            </div>
-            <div
-              class="flex absolute inset-0 bg-slate-100/95 dark:bg-slate-900/95 justify-center items-center"
-            >
-              <div
-                class="px-4 py-2 rounded-lg bg-slate-500 dark:bg-slate-800 border-2 border-slate-300 dark:border-slate-600 text-slate-200 dark:text-slate-400 flex justify-center items-center"
-              >
-                <Text as="span">Coming Soon</Text>
-              </div>
-            </div>
-          </div>
+          <PricingCard
+            cardID="basic-pricing-card"
+            variant="secondary"
+            heading="Demo"
+            pricePoint="Free"
+            description="No account creation needed"
+            ctaText="Start"
+            ctaLink="/demo"
+            ctaVariant="secondary"
+          />
+          <PricingCard
+            cardID="premium-pricing-card"
+            variant="primary"
+            heading="Basic"
+            pricePoint="Soon"
+            description="This tier s coming soon"
+            ctaText="Coming Soon"
+            isInert
+          />
         </div>
       </div>
     </section>
