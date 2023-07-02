@@ -7,6 +7,7 @@
     | "success"
     | "warning"
     | "error" = "secondary";
+  export let tooltip: string;
 
   let buttonPadding: string;
   let buttonVariant: string;
@@ -39,6 +40,7 @@
 
 <button
   class={`transition outline-none ease-in flex justify-center items-center border-2 ${buttonPadding} ${buttonVariant}`}
+  title={tooltip}
   on:click
 >
   <svelte:component this={icon} />
