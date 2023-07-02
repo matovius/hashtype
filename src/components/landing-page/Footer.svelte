@@ -1,11 +1,8 @@
 <script lang="ts">
   import { browser } from "$app/environment";
-  import SunIcon from "../icons/SunIcon.svelte";
-  import MoonIcon from "../icons/MoonIcon.svelte";
   import Text from "../typography/Text.svelte";
   import HashtypeLogo from "../icons/HashtypeLogo.svelte";
-  import ComputerDesktopIcon from "../icons/ComputerDesktopIcon.svelte";
-  import IconButton from "../buttons/IconButton.svelte";
+  import ThemeSwitcher from "../buttons/ThemeSwitcher.svelte";
 
   let isDarkMode: boolean = false;
   let themeLabel: "Toggle Dark Mode" | "Toggle Light Mode";
@@ -132,14 +129,7 @@
       <div class="w-12 aspect-square text-sky-100" title="App icon goes here">
         <HashtypeLogo />
       </div>
-      <div class="flex justify-center items-center gap-2">
-        <IconButton icon={SunIcon} on:click={toggleLightTheme} />
-        <IconButton icon={MoonIcon} on:click={toggleDarkTheme} />
-        <IconButton
-          icon={ComputerDesktopIcon}
-          on:click={togglePreferredTheme}
-        />
-      </div>
+      <ThemeSwitcher />
     </div>
     <div class="w-full flex justify-between align-center">
       <div class="w-full">
