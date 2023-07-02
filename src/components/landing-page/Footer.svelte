@@ -122,7 +122,7 @@
 </script>
 
 <footer
-  class="w-full bg-slate-800 text-slate-100 flex flex-col justify-center items-center"
+  class="w-full bg-sky-950 text-slate-100 flex flex-col justify-center items-center"
 >
   <div class="w-full max-w-5xl px-4 py-10 flex flex-col gap-12 sm:flex-row">
     <div
