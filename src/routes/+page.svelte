@@ -72,7 +72,7 @@
           />
         </div>
         <div
-          class="w-full min-w-[320px] max-w-lg aspect-video bg-slate-700 rounded-xl"
+          class="transition w-full min-w-[320px] max-w-xl aspect-video border-2 border-slate-500 bg-slate-500/40 rounded-2xl overflow-hidden hover:scale-110"
           title="Hero image goes here"
         />
       </div>
