@@ -3,6 +3,8 @@
   import Text from "../typography/Text.svelte";
   import HashtypeLogo from "../icons/HashtypeLogo.svelte";
   import ThemeSwitcher from "../buttons/ThemeSwitcher.svelte";
+  import Link from "../navigation/Link.svelte";
+  import LinkButton from "../buttons/LinkButton.svelte";
 
   let isDarkMode: boolean = false;
   let themeLabel: "Toggle Dark Mode" | "Toggle Light Mode";
@@ -138,12 +140,7 @@
         >
           {#each appLinks as appLink}
             <li>
-              <a
-                href={appLink.route}
-                class="transition font-bold underline underline-offset-2 decoration-2 decoration-slate-500 hover:decoration-slate-300"
-              >
-                <Text as="p">{appLink.label}</Text>
-              </a>
+              <Link route={appLink.route} label={appLink.label} />
             </li>
           {/each}
         </ul>
@@ -154,14 +151,7 @@
         >
           {#each externalLinks as externalLink}
             <li>
-              <a
-                href={externalLink.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                class="transition font-bold underline underline-offset-2 decoration-2 decoration-slate-500 hover:decoration-slate-300"
-              >
-                <Text as="p">{externalLink.label}</Text>
-              </a>
+              <Link label={externalLink.label} route={externalLink.link} />
             </li>
           {/each}
         </ul>
@@ -174,8 +164,8 @@
     <div
       class="w-full max-w-5xl p-4 flex flex-col gap-2 sm:flex-row sm:justify-between"
     >
-      <Text as="span">Copyright 2023, Hashtype. All Rights Reserved</Text>
-      <Text as="span">Made with passion, and SvelteKit</Text>
+      <Text as="legend">Copyright 2023, Hashtype. All Rights Reserved</Text>
+      <Text as="legend">Made with passion, and SvelteKit</Text>
     </div>
   </div>
 </footer>
