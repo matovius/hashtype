@@ -1,4 +1,6 @@
 <script lang="ts">
+  import PricingCard from "./PricingCard.svelte";
+
   import Header from "../components/landing-page/Header.svelte";
   import Footer from "../components/landing-page/Footer.svelte";
 
@@ -90,12 +92,12 @@
           class="w-full flex gap-6 flex-wrap py-6 justify-center items-center"
         >
           {#each features as feature}
-            <div
-              class="transition delay-200 w-80 h-40 p-4 flex flex-col gap-4 rounded-2xl border-2 bg-slate-100 dark:bg-slate-800 border-slate-300 dark:border-slate-600 hover:scale-110 hover:shadow-lg hover:shadow-slate-300 dark:hover:shadow-slate-950"
+            <article
+              class="transition w-80 h-40 p-4 flex flex-col gap-4 rounded-2xl border-2 border-slate-500 bg-slate-100 dark:bg-slate-900 hover:scale-110"
             >
               <Text as="h5">{feature.name}</Text>
               <Text as="p">{feature.description}</Text>
-            </div>
+            </article>
           {/each}
         </div>
       </div>
@@ -112,35 +114,7 @@
         <div
           class="w-full flex gap-6 flex-wrap py-6 justify-center items-center"
         >
-          <div
-            id="basic-card"
-            class="transition w-80 h-80 rounded-2xl flex flex-col border-2 border-slate-300 dark:border-slate-600 bg-slate-100 dark:bg-slate-800 overflow-hidden"
-          >
-            <div
-              class="p-4 border-b-2 border-slate-300 dark:-border-slate-600 bg-slate-500 dark:bg-slate-300 text-slate-100 dark:text-slate-800 flex justify-center items-center"
-            >
-              <Text as="h5">Demo</Text>
-            </div>
-            <div
-              class="p-4 h-full flex flex-col justify-center items-center gap-4"
-            >
-              <span class="text-6xl font-bold font-display">FREE</span>
-              <span class="text-sm font-semibold font-body text-slate-500"
-                >No account creation needed</span
-              >
-            </div>
-            <div
-              class="p-4 border-t-2 border-slate-300 dark:border-slate-600 flex justify-center items-center"
-            >
-              <LinkButton
-                link="/demo"
-                textLabel="Start"
-                width="container"
-                size="large"
-                variant="primary"
-              />
-            </div>
-          </div>
+          <PricingCard cardID="basic-pricing-card" variant="secondary" />
           <div
             inert
             id="premium-card"
