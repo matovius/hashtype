@@ -8,21 +8,14 @@
   export let size: "small" | "medium" | "large" = "small";
 
   let isDarkMode: boolean = false;
-  let themeLabel: "Toggle Dark Mode" | "Toggle Light Mode";
-
-  isDarkMode
-    ? (themeLabel = "Toggle Light Mode")
-    : (themeLabel = "Toggle Dark Mode");
 
   function setDarkTheme() {
     const root: HTMLElement = document.documentElement;
-    themeLabel = "Toggle Light Mode";
     root.classList.add("dark");
   }
 
   function setLightTheme() {
     const root: HTMLElement = document.documentElement;
-    themeLabel = "Toggle Dark Mode";
     root.classList.remove("dark");
   }
 
@@ -50,9 +43,6 @@
         root.classList.remove("dark");
         isDarkMode = false;
       }
-      isDarkMode
-        ? (themeLabel = "Toggle Light Mode")
-        : (themeLabel = "Toggle Dark Mode");
     }
   }
 
@@ -65,9 +55,7 @@
       root.classList.remove("dark");
       isDarkMode = false;
     }
-    isDarkMode
-      ? (themeLabel = "Toggle Light Mode")
-      : (themeLabel = "Toggle Dark Mode");
+    isDarkMode;
   }
 </script>
 
