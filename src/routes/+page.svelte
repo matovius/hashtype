@@ -52,7 +52,7 @@
   <main class="flex flex-col justify-center">
     <section
       id="hero-section"
-      class="text-slate-100 w-full h-full p-20 bg-sky-950 flex flex-col justify-start items-center gap-10 relative"
+      class="text-slate-100 w-full h-full p-20 bg-slate-900 flex flex-col justify-start items-center gap-10 relative"
     >
       <div class="w-full max-w-5xl flex flex-col items-center gap-8 pt-20">
         <div
@@ -74,7 +74,7 @@
           />
         </div>
         <div
-          class="transition w-full min-w-[320px] max-w-xl aspect-video border-2 border-slate-500 bg-slate-500/40 rounded-2xl overflow-hidden hover:scale-110"
+          class="transition w-full min-w-[320px] max-w-xl aspect-video border-2 border-slate-500 bg-slate-500/20 rounded-2xl overflow-hidden hover:scale-110"
           title="Hero image goes here"
         />
       </div>
@@ -115,7 +115,7 @@
           class="w-full flex gap-6 flex-wrap py-6 justify-center items-center"
         >
           <PricingCard
-            cardID="basic-pricing-card"
+            cardID="demo-pricing-card"
             variant="secondary"
             heading="Demo"
             pricePoint="Free"
@@ -125,7 +125,7 @@
             ctaVariant="secondary"
           />
           <PricingCard
-            cardID="premium-pricing-card"
+            cardID="basic-pricing-card"
             variant="primary"
             heading="Basic"
             pricePoint="Soon"
