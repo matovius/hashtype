@@ -29,7 +29,7 @@
     right-0
     p-4
     border-b-2
-    border-slate-300 dark:border-slate-700
+    border-slate-500
     bg-slate-100 dark:bg-slate-900
     flex
     justify-center
