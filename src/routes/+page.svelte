@@ -81,7 +81,7 @@
       id="features"
       class="w-full px-6 py-24 flex justify-center items-center"
     >
-      <div class="w-full h-full max-w-5xl">
+      <div class="w-full h-full max-w-5xl flex flex-col gap-6">
         <div class="text-center">
           <Text as="h2">Features</Text>
         </div>
@@ -104,7 +104,7 @@
       id="pricing"
       class="w-full px-6 py-24 flex justify-center items-center"
     >
-      <div class="w-full h-full max-w-5xl">
+      <div class="w-full h-full max-w-5xl flex flex-col gap-6">
         <div class="text-center">
           <Text as="h2">Pricing</Text>
         </div>
@@ -119,7 +119,7 @@
             <div
               class="p-4 border-b-2 border-slate-300 dark:-border-slate-600 bg-slate-500 dark:bg-slate-300 text-slate-100 dark:text-slate-800 flex justify-center items-center"
             >
-              <Text as="h5">Basic</Text>
+              <Text as="h5">Demo</Text>
             </div>
             <div
               class="p-4 h-full flex flex-col justify-center items-center gap-4"
@@ -136,11 +136,13 @@
                 link="/demo"
                 textLabel="Start"
                 width="container"
-                size="medium"
+                size="large"
+                variant="primary"
               />
             </div>
           </div>
           <div
+            inert
             id="premium-card"
             class="transition w-80 h-80 rounded-2xl flex flex-col border-2 border-slate-300 dark:border-slate-600 bg-slate-100 dark:bg-slate-800 overflow-hidden relative"
           >
