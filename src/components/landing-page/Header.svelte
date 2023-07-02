@@ -3,7 +3,6 @@
   import Text from "../typography/Text.svelte";
   import HashtypeLogo from "../icons/HashtypeLogo.svelte";
   import LinkButton from "../buttons/LinkButton.svelte";
-  import ArrowLeftIcon from "../icons/ArrowLeftIcon.svelte";
 
   interface NavLink {
     name: string;
