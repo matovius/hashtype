@@ -55,6 +55,20 @@
         : (themeLabel = "Toggle Dark Mode");
     }
   }
+
+  if (browser) {
+    const root: HTMLElement = document.documentElement;
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      root.classList.add("dark");
+      isDarkMode = true;
+    } else {
+      root.classList.remove("dark");
+      isDarkMode = false;
+    }
+    isDarkMode
+      ? (themeLabel = "Toggle Light Mode")
+      : (themeLabel = "Toggle Dark Mode");
+  }
 </script>
 
 <div class="flex justify-center items-center gap-2">
