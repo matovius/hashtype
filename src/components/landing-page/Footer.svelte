@@ -129,7 +129,7 @@
       <div class="w-12 aspect-square text-sky-100" title="App icon goes here">
         <HashtypeLogo />
       </div>
-      <ThemeSwitcher />
+      <ThemeSwitcher size="large" />
     </div>
     <div class="w-full flex justify-between align-center">
       <div class="w-full">
