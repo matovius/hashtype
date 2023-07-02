@@ -5,6 +5,7 @@
   import Text from "../typography/Text.svelte";
   import HashtypeLogo from "../icons/HashtypeLogo.svelte";
   import ComputerDesktopIcon from "../icons/ComputerDesktopIcon.svelte";
+  import IconButton from "../buttons/IconButton.svelte";
 
   let isDarkMode: boolean = false;
   let themeLabel: "Toggle Dark Mode" | "Toggle Light Mode";
@@ -122,7 +123,7 @@
 </script>
 
 <footer
-  class="w-full bg-sky-950 text-slate-100 flex flex-col justify-center items-center"
+  class="w-full bg-slate-900 text-slate-100 flex flex-col justify-center items-center"
 >
   <div class="w-full max-w-5xl px-4 py-10 flex flex-col gap-12 sm:flex-row">
     <div
@@ -131,30 +132,13 @@
       <div class="w-12 aspect-square text-sky-100" title="App icon goes here">
         <HashtypeLogo />
       </div>
-      <div
-        class="w-full max-w-sm rounded-lg border-2 border-slate-500 flex justify-center items-center overflow-hidden"
-      >
-        <button
-          class="w-full flex justify-center items-center p-2 border-r-2 border-slate-500 bg-slate-700 hover:bg-slate-600"
-          on:click={toggleLightTheme}
-          title="Toggle Light Theme"
-        >
-          <SunIcon />
-        </button>
-        <button
-          class="w-full flex justify-center items-center p-2 bg-slate-700 hover:bg-slate-600"
-          on:click={toggleDarkTheme}
-          title="Toggle Dark Theme"
-        >
-          <MoonIcon />
-        </button>
-        <button
-          class="w-full flex justify-center items-center p-2 border-l-2 border-slate-500 bg-slate-700 hover:bg-slate-600"
+      <div class="flex justify-center items-center gap-2">
+        <IconButton icon={SunIcon} on:click={toggleLightTheme} />
+        <IconButton icon={MoonIcon} on:click={toggleDarkTheme} />
+        <IconButton
+          icon={ComputerDesktopIcon}
           on:click={togglePreferredTheme}
-          title="Toggle System Default"
-        >
-          <ComputerDesktopIcon />
-        </button>
+        />
       </div>
     </div>
     <div class="w-full flex justify-between align-center">
