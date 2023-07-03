@@ -1,9 +1,7 @@
 <script lang="ts">
-  import PricingCard from "./PricingCard.svelte";
-
   import Header from "../components/landing-page/Header.svelte";
   import Footer from "../components/landing-page/Footer.svelte";
-
+  import PricingCard from "../components/landing-page/PricingCard.svelte";
   import Link from "../components/navigation/Link.svelte";
   import Text from "../components/typography/Text.svelte";
   import LinkButton from "../components/buttons/LinkButton.svelte";
