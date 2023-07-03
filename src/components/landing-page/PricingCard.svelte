@@ -1,9 +1,9 @@
 <script lang="ts">
-  import Text from "../components/typography/Text.svelte";
-  import LinkButton from "../components/buttons/LinkButton.svelte";
-  import Button from "../components/buttons/Button.svelte";
-  import IconButton from "../components/buttons/IconButton.svelte";
-  import XMarkIcon from "../components/icons/XMarkIcon.svelte";
+  import Text from "../typography/Text.svelte";
+  import LinkButton from "../buttons/LinkButton.svelte";
+  import Button from "../buttons/Button.svelte";
+  import IconButton from "../buttons/IconButton.svelte";
+  import XMarkIcon from "../icons/XMarkIcon.svelte";
 
   export let cardID: string;
   export let variant: "primary" | "secondary" = "primary";
