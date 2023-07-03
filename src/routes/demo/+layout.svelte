@@ -7,7 +7,17 @@
   import Sidebar from "../../components/demo/Sidebar.svelte";
   import Text from "../../components/typography/Text.svelte";
   import XMarkIcon from "../../components/icons/XMarkIcon.svelte";
+  import Button from "../../components/buttons/Button.svelte";
+  import HashtypeLogo from "../../components/icons/HashtypeLogo.svelte";
+  import DocumentPlusIcon from "../../components/icons/DocumentPlusIcon.svelte";
+  import FolderIcon from "../../components/icons/FolderIcon.svelte";
+  import PencilSquareIcon from "../../components/icons/PencilSquareIcon.svelte";
+  import TrashIcon from "../../components/icons/TrashIcon.svelte";
+  import LinkButton from "../../components/buttons/LinkButton.svelte";
+  import LinkIconButton from "../../components/buttons/LinkIconButton.svelte";
   import IconButton from "../../components/buttons/IconButton.svelte";
+  import EllipsisVertical from "../../components/icons/EllipsisVertical.svelte";
+  import ThemeSwitcher from "../../components/buttons/ThemeSwitcher.svelte";
 
   let isDarkMode: boolean = false;
   let themeLabel: "Toggle Dark Mode" | "Toggle Light Mode";
@@ -28,6 +38,7 @@
 
   let sidebarModal: HTMLDialogElement;
   let newNoteModal: HTMLDialogElement;
+  let moreOptionsDialog: HTMLDialogElement;
 
   function openSidebarModal() {
     sidebarModal.showModal();
@@ -49,34 +60,109 @@
     closeSidebarModal();
     setTimeout(openNewNoteModal, 100);
   }
+
+  function openMoreOptionsPopover() {
+    moreOptionsDialog.showModal();
+  }
+
+  function closeMoreOptionsPopover() {
+    moreOptionsDialog.close();
+  }
 </script>
 
 <div class="app">
   <header
     class="w-full flex justify-between items-center border-b-2 border-slate-500 bg-slate-100 dark:bg-slate-900"
   >
-    <div class="p-4">
-      <IconButton
-        icon={Bars2Icon}
-        size="small"
-        tooltip="Open Nav Drawer"
-        on:click={openSidebarModal}
-      />
-      <dialog bind:this={sidebarModal} class="border-0 bg-transparent relative">
-        <div
-          class="fixed inset-0 bg-slate-800/50 backdrop-blur-[8px]"
-          on:click={closeSidebarModal}
-        />
-        <div class="fixed top-0 left-0 bottom-0 w-4/5 sm:w-80">
-          <Sidebar
-            on:close={closeSidebarModal}
-            on:newnote={createNoteFromSidebar}
-          />
-          <div />
-        </div>
-      </dialog>
+    <div class="p-2 flex justify-center items-center">
+      <nav class="flex justify-center items-center gap-2">
+        <ul class="hidden md:flex justify-center items-center gap-2">
+          <li>
+            <LinkButton
+              link="/demo/folders"
+              startIcon={FolderIcon}
+              textLabel="Folders"
+              size="medium"
+              variant="secondary"
+            />
+          </li>
+          <li>
+            <LinkButton
+              link="/demo/notepad"
+              startIcon={PencilSquareIcon}
+              textLabel="Notepad"
+              size="medium"
+              variant="secondary"
+            />
+          </li>
+          <li>
+            <LinkButton
+              link="/demo/trash"
+              startIcon={TrashIcon}
+              textLabel="Trash"
+              size="medium"
+              variant="error"
+            />
+          </li>
+        </ul>
+        <ul class="flex md:hidden justify-center items-center gap-2">
+          <li>
+            <LinkIconButton
+              link="/demo/folders"
+              icon={FolderIcon}
+              tooltip="Folders"
+              size="medium"
+              variant="secondary"
+            />
+          </li>
+          <li>
+            <LinkIconButton
+              link="/demo/notepad"
+              icon={PencilSquareIcon}
+              tooltip="Notepad"
+              size="medium"
+              variant="secondary"
+            />
+          </li>
+          <li>
+            <LinkIconButton
+              link="/demo/trash"
+              icon={TrashIcon}
+              tooltip="Trash"
+              size="medium"
+              variant="error"
+            />
+          </li>
+        </ul>
+      </nav>
+      <div />
     </div>
-    <div />
+    <div class="p-2 flex justify-center items-center gap-2">
+      <div class="hidden md:inline-block">
+        <Button
+          startIcon={DocumentPlusIcon}
+          textLabel="New Note"
+          size="medium"
+          variant="primary"
+        />
+      </div>
+      <div class="inline-block md:hidden">
+        <IconButton
+          icon={DocumentPlusIcon}
+          tooltip="New Note"
+          size="medium"
+          variant="primary"
+        />
+      </div>
+      <div class="relative">
+        <IconButton
+          icon={EllipsisVertical}
+          tooltip="More Options"
+          size="medium"
+          variant="secondary"
+        />
+      </div>
+    </div>
   </header>
   <slot />
   <footer class="w-full bg-slate-800">
