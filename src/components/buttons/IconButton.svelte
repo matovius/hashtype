@@ -13,11 +13,11 @@
   let buttonVariant: string;
 
   if (size === "small") {
-    buttonPadding = "rounded-md p-1";
+    buttonPadding = "p-1";
   } else if (size === "medium") {
-    buttonPadding = "rounded-lg p-2";
+    buttonPadding = "p-2";
   } else if (size === "large") {
-    buttonPadding = "rounded-xl p-4";
+    buttonPadding = "p-4";
   }
 
   if (variant === "primary") {
@@ -39,7 +39,7 @@
 </script>
 
 <button
-  class={`transition outline-none ease-in flex justify-center items-center border-2 ${buttonPadding} ${buttonVariant}`}
+  class={`transition outline-none ease-in flex justify-center items-center rounded-full border-2 ${buttonPadding} ${buttonVariant}`}
   title={tooltip}
   on:click
 >

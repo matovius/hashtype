@@ -21,11 +21,11 @@
   let textAlign: string;
 
   if (size === "small") {
-    buttonSize = "gap-2 rounded-md px-2 py-1";
+    buttonSize = "gap-2 px-2 py-1";
   } else if (size === "medium") {
-    buttonSize = "gap-4 rounded-lg px-4 py-2";
+    buttonSize = "gap-4 px-4 py-2";
   } else if (size === "large") {
-    buttonSize = "gap-6 rounded-xl px-8 py-4";
+    buttonSize = "gap-6 px-8 py-4";
   }
 
   if (variant === "primary") {
@@ -62,7 +62,7 @@
 
 <a
   href={link}
-  class={`transition outline-none ease-in flex justify-center items-center border-2 ${buttonWidth} ${buttonSize} ${buttonVariant}`}
+  class={`transition outline-none ease-in flex justify-center items-center rounded-full border-2 ${buttonWidth} ${buttonSize} ${buttonVariant}`}
 >
   {#if startIcon !== null}
     <svelte:component this={startIcon} />
