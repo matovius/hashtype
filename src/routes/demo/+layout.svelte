@@ -7,6 +7,7 @@
   import Sidebar from "../../components/demo/Sidebar.svelte";
   import Text from "../../components/typography/Text.svelte";
   import XMarkIcon from "../../components/icons/XMarkIcon.svelte";
+  import IconButton from "../../components/buttons/IconButton.svelte";
 
   let isDarkMode: boolean = false;
   let themeLabel: "Toggle Dark Mode" | "Toggle Light Mode";
@@ -50,17 +51,17 @@
   }
 </script>
 
-<div class="app text-slate-800 dark:text-slate-200">
+<div class="app">
   <header
-    class="w-full flex justify-between items-center border-b-2 border-slate-300 dark:border-slate-700 bg-slate-200 dark:bg-slate-800"
+    class="w-full flex justify-between items-center border-b-2 border-slate-500 bg-slate-100 dark:bg-slate-900"
   >
     <div class="p-4">
-      <button
+      <IconButton
+        icon={Bars2Icon}
+        size="small"
+        tooltip="Open Nav Drawer"
         on:click={openSidebarModal}
-        class="transition outline-none p-2 flex justify-center items-center rounded-lg bg-transparent hover:bg-slate-300 dark:hover:bg-slate-700 focus:bg-slate-300 dark:focus:bg-slate-700"
-      >
-        <Bars2Icon />
-      </button>
+      />
       <dialog bind:this={sidebarModal} class="border-0 bg-transparent relative">
         <div
           class="fixed inset-0 bg-slate-800/50 backdrop-blur-[8px]"

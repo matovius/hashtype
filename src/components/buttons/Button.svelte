@@ -51,16 +51,16 @@
   }
 
   if (align === "start") {
-    textAlign = "text-start";
+    textAlign = "text-start justify-start";
   } else if (align === "center") {
-    textAlign = "text-center";
+    textAlign = "text-center justify-center";
   } else if (align === "end") {
-    textAlign = "text-end";
+    textAlign = "text-end justify-end";
   }
 </script>
 
 <button
-  class={`transition outline-none ease-in flex justify-center items-center border-2 ${buttonWidth} ${buttonSize} ${buttonVariant}`}
+  class={`transition outline-none ease-in flex ${textAlign} items-center border-2 ${buttonWidth} ${buttonSize} ${buttonVariant}`}
   on:click
 >
   {#if startIcon !== null}
