@@ -51,7 +51,7 @@
 <div />
 <div
   id={cardID}
-  class={`relative ${inertBlur} transition w-80 aspect-square rounded-2xl flex flex-col border-2 overflow-hidden ${cardVariant} bg-slate-100 dark:bg-slate-900`}
+  class={`relative ${inertBlur} transition w-80 aspect-square rounded-[32px] flex flex-col border-2 overflow-hidden ${cardVariant} bg-slate-100 dark:bg-slate-900`}
   inert={isInert}
 >
   <div
