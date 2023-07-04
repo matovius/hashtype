@@ -119,5 +119,7 @@
       </div>
     </nav>
   </header>
-  <slot />
+  <main class="w-full h-full flex flex-col p-4">
+    <slot />
+  </main>
 </div>
