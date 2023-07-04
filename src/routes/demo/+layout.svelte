@@ -36,37 +36,16 @@
       : (themeLabel = "Toggle Dark Mode");
   }
 
-  let sidebarModal: HTMLDialogElement;
+  let navigationDialog: HTMLDialogElement;
   let newNoteModal: HTMLDialogElement;
   let moreOptionsDialog: HTMLDialogElement;
 
-  function openSidebarModal() {
-    sidebarModal.showModal();
+  function openNavigationDialog() {
+    navigationDialog.showModal();
   }
 
-  function closeSidebarModal() {
-    sidebarModal.close();
-  }
-
-  function openNewNoteModal() {
-    newNoteModal.showModal();
-  }
-
-  function closeNewNoteModal() {
-    newNoteModal.close();
-  }
-
-  function createNoteFromSidebar() {
-    closeSidebarModal();
-    setTimeout(openNewNoteModal, 100);
-  }
-
-  function openMoreOptionsPopover() {
-    moreOptionsDialog.showModal();
-  }
-
-  function closeMoreOptionsPopover() {
-    moreOptionsDialog.close();
+  function closeNavigationDialog() {
+    navigationDialog.close();
   }
 </script>
 
@@ -75,63 +54,64 @@
     class="sticky top-0 w-full flex justify-between items-center bg-gradient-to-b from-slate-50 via-slate-50/90 to-transparent dark:from-slate-950 dark:via-slate-950/90 dark:to-transparent"
   >
     <nav class="w-full p-4 flex justify-between items-center gap-2">
-      <ul class="flex justify-center items-center gap-2">
-        <li class="hidden md:inline-block">
-          <Button
-            startIcon="add"
-            textLabel="New Note"
-            size="medium"
-            variant="primary"
-          />
-        </li>
-        <li class="inline-block md:hidden">
+      <IconButton
+        icon="menu"
+        tooltip="Navigation"
+        size="medium"
+        variant="secondary"
+        on:click={openNavigationDialog}
+      />
+      <dialog class="border-none bg-transparent" bind:this={navigationDialog}>
+        <div
+          class="transition fixed inset-0 bg-gradient-to-b from-slate-50 via-slate-50/95 to-slate-50/80 dark:from-slate-950 dark:via-slate-950/95 dark:to-slate-950/80"
+          role="navigation"
+          on:click={closeNavigationDialog}
+          on:keydown={closeNavigationDialog}
+        />
+        <div
+          class="fixed top-0 left-0 p-4 flex justify-start items-start gap-4"
+        >
           <IconButton
-            icon="add"
-            tooltip="New Note"
-            size="medium"
-            variant="primary"
-          />
-        </li>
-        <li class="inline-block lg:hidden">
-          <LinkIconButton
-            link="/demo/notepad"
-            icon="draw"
-            tooltip="Notepad"
+            icon="close"
+            tooltip="Close"
             size="medium"
             variant="secondary"
+            on:click={closeNavigationDialog}
           />
-        </li>
-        <li class="inline-block lg:hidden">
-          <LinkIconButton
-            link="/demo/trash"
-            icon="delete_outline"
-            tooltip="Trash"
-            size="medium"
-            variant="error"
-          />
-        </li>
-        <li class="hidden lg:inline-block">
-          <LinkButton
-            link="/demo/notepad"
-            startIcon="draw"
-            textLabel="Notepad"
-            size="medium"
-            variant="secondary"
-          />
-        </li>
-        <li class="hidden lg:inline-block">
-          <LinkButton
-            link="/demo/trash"
-            startIcon="delete_outline"
-            textLabel="Trash"
-            size="medium"
-            variant="error"
-          />
-        </li>
-      </ul>
+          <div class="flex flex-col sm:flex-row gap-x-4 gap-y-2">
+            <ul class="flex flex-row gap-2">
+              <li>
+                <IconButton
+                  icon="add"
+                  tooltip="New Note"
+                  size="medium"
+                  variant="primary"
+                />
+              </li>
+              <li>
+                <IconButton
+                  icon="edit"
+                  tooltip="Notepad"
+                  size="medium"
+                  variant="primary"
+                />
+              </li>
+              <li>
+                <IconButton
+                  icon="account_circle"
+                  tooltip="Your Account"
+                  size="medium"
+                  variant="primary"
+                />
+              </li>
+            </ul>
+            <ThemeSwitcher size="medium" />
+          </div>
+        </div>
+      </dialog>
       <div class="relative">
         <IconButton
-          icon="account_circle"
+          icon="more_vert"
           tooltip="Demo Account"
           size="medium"
           variant="secondary"
