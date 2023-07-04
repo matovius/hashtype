@@ -9,8 +9,8 @@
     | "success"
     | "warning"
     | "error" = "secondary";
-  export let startIcon: any = null;
-  export let endIcon: any = null;
+  export let startIcon: string | null = null;
+  export let endIcon: string | null = null;
   export let width: "content" | "container" = "content";
   export let textLabel: string;
   export let align: "start" | "center" | "end" = "start";
@@ -65,12 +65,12 @@
   class={`transition outline-none ease-in flex justify-center items-center rounded-full border-2 ${buttonWidth} ${buttonSize} ${buttonVariant}`}
 >
   {#if startIcon !== null}
-    <svelte:component this={startIcon} />
+    <span class="material-icons-rounded">{startIcon}</span>
   {/if}
   <div class={`${textAlign}`}>
     <Text as="span">{textLabel}</Text>
   </div>
   {#if endIcon !== null}
-    <svelte:component this={endIcon} />
+    <span class="material-icons-rounded">{endIcon}</span>
   {/if}
 </a>

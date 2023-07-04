@@ -61,20 +61,20 @@
 
 <div class="flex justify-center items-center gap-2">
   <IconButton
-    icon={SunIcon}
-    size="large"
+    icon="light_mode"
+    {size}
     on:click={toggleLightTheme}
     tooltip="Toggle Light Mode"
   />
   <IconButton
-    icon={MoonIcon}
-    size="large"
+    icon="dark_mode"
+    {size}
     on:click={toggleDarkTheme}
     tooltip="Toggle Dark Mode"
   />
   <IconButton
-    icon={ComputerDesktopIcon}
-    size="large"
+    icon="computer"
+    {size}
     on:click={togglePreferredTheme}
     tooltip="Toggle System Default"
   />

@@ -74,13 +74,29 @@
   <header
     class="w-full flex justify-between items-center border-b-2 border-slate-500 bg-slate-100 dark:bg-slate-900"
   >
-    <div class="p-2 flex justify-center items-center">
+    <div class="p-2 flex justify-center items-center gap-2">
+      <div class="hidden md:inline-block">
+        <Button
+          startIcon="add"
+          textLabel="New Note"
+          size="medium"
+          variant="primary"
+        />
+      </div>
+      <div class="inline-block md:hidden">
+        <IconButton
+          icon="add"
+          tooltip="New Note"
+          size="medium"
+          variant="primary"
+        />
+      </div>
       <nav class="flex justify-center items-center gap-2">
         <ul class="hidden md:flex justify-center items-center gap-2">
           <li>
             <LinkButton
               link="/demo/folders"
-              startIcon={FolderIcon}
+              startIcon="folder_open"
               textLabel="Folders"
               size="medium"
               variant="secondary"
@@ -89,7 +105,7 @@
           <li>
             <LinkButton
               link="/demo/notepad"
-              startIcon={PencilSquareIcon}
+              startIcon="draw"
               textLabel="Notepad"
               size="medium"
               variant="secondary"
@@ -98,7 +114,7 @@
           <li>
             <LinkButton
               link="/demo/trash"
-              startIcon={TrashIcon}
+              startIcon="delete_outline"
               textLabel="Trash"
               size="medium"
               variant="error"
@@ -109,7 +125,7 @@
           <li>
             <LinkIconButton
               link="/demo/folders"
-              icon={FolderIcon}
+              icon="folder_open"
               tooltip="Folders"
               size="medium"
               variant="secondary"
@@ -118,7 +134,7 @@
           <li>
             <LinkIconButton
               link="/demo/notepad"
-              icon={PencilSquareIcon}
+              icon="draw"
               tooltip="Notepad"
               size="medium"
               variant="secondary"
@@ -127,7 +143,7 @@
           <li>
             <LinkIconButton
               link="/demo/trash"
-              icon={TrashIcon}
+              icon="delete_outline"
               tooltip="Trash"
               size="medium"
               variant="error"
@@ -138,26 +154,10 @@
       <div />
     </div>
     <div class="p-2 flex justify-center items-center gap-2">
-      <div class="hidden md:inline-block">
-        <Button
-          startIcon={DocumentPlusIcon}
-          textLabel="New Note"
-          size="medium"
-          variant="primary"
-        />
-      </div>
-      <div class="inline-block md:hidden">
-        <IconButton
-          icon={DocumentPlusIcon}
-          tooltip="New Note"
-          size="medium"
-          variant="primary"
-        />
-      </div>
       <div class="relative">
         <IconButton
-          icon={EllipsisVertical}
-          tooltip="More Options"
+          icon="account_circle"
+          tooltip="Demo Account"
           size="medium"
           variant="secondary"
         />

@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { browser } from "$app/environment";
   import Text from "../typography/Text.svelte";
   import HashtypeLogo from "../icons/HashtypeLogo.svelte";
   import ThemeSwitcher from "../buttons/ThemeSwitcher.svelte";

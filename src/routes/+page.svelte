@@ -66,7 +66,7 @@
           <LinkButton
             link="/demo"
             textLabel="Start Demo"
-            endIcon={ArrowLeftIcon}
+            endIcon="chevron_right"
             variant="primary"
             size="large"
           />

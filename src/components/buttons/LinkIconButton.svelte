@@ -1,5 +1,5 @@
 <script lang="ts">
-  export let icon: any;
+  export let icon: string;
   export let link: string = "/";
   export let size: "small" | "medium" | "large" = "small";
   export let variant:
@@ -44,5 +44,5 @@
   class={`transition outline-none ease-in flex justify-center items-center rounded-full border-2 ${buttonPadding} ${buttonVariant}`}
   title={tooltip}
 >
-  <svelte:component this={icon} />
+  <span class="material-icons-rounded">{icon}</span>
 </a>
