@@ -1,64 +1,45 @@
 <script lang="ts">
-  import DocumentPlusIcon from "../../components/icons/DocumentPlusIcon.svelte";
-  import FolderPlusIcon from "../../components/icons/FolderPlusIcon.svelte";
-  import HashtypeLogo from "../../components/icons/HashtypeLogo.svelte";
-  import PencilSquareIcon from "../../components/icons/PencilSquareIcon.svelte";
+  import Button from "../../components/buttons/Button.svelte";
   import Text from "../../components/typography/Text.svelte";
-
-  interface StartingAction {
-    icon: any;
-    title: string;
-    description: string;
-  }
-
-  const startingActions: StartingAction[] = [
-    {
-      icon: DocumentPlusIcon,
-      title: "Note",
-      description: "Create a new note",
-    },
-    {
-      icon: FolderPlusIcon,
-      title: "Folder",
-      description: "Create a new folder",
-    },
-    {
-      icon: PencilSquareIcon,
-      title: "Notepad",
-      description: "Quickly jot something down",
-    },
-  ];
 </script>
 
 <svelte:head>
   <title>Hashtype Demo App</title>
 </svelte:head>
 
-<main class="w-full h-full flex justify-center items-center overflow-y-scroll">
-  <div class="flex flex-col gap-12 p-4">
-    <div
-      class="text-sky-500 dark:text-slate-300 flex justify-center items-center gap-4 sm:gap-6 md:gap-8"
-    >
-      <div class="w-16 aspect-square">
-        <HashtypeLogo />
-      </div>
+<main class="w-full h-full flex flex-col overflow-y-auto px-4">
+  <div
+    class="w-full py-4 flex justify-between items-center gap-4 border-b-2 border-slate-500"
+  >
+    <div>
+      <Text as="h1">Demo</Text>
     </div>
-    <div class="flex flex-col justify-center items-center gap-6">
-      <Text as="h1">Get Started</Text>
-      <div class="flex justify-center items-center gap-4 flex-wrap">
-        {#each startingActions as startingAction}
-          <button
-            class="transition hover:scale-110 focus:scale-110 outline-none text-left w-full max-w-xs p-4 flex flex-col gap-4 rounded-xl border-2 border-slate-300 hover:border-slate-500 focus:border-slate-500 dark:border-slate-700 dark:hover:border-slate-500 dark:focus:border-slate-500 bg-slate-100 hover:bg-slate-300 focus:bg-slate-300 dark:bg-slate-800 dark:hover:bg-slate-700 dark:focus:bg-slate-700"
-          >
-            <div class="flex gap-2">
-              <svelte:component this={startingAction.icon} />
-              <Text as="h5">{startingAction.title}</Text>
-            </div>
-            <Text as="p">{startingAction.description}</Text>
-          </button>
-        {/each}
+    <div>
+      <Button
+        startIcon="add"
+        textLabel="New Note"
+        variant="primary"
+        size="medium"
+      />
+    </div>
+  </div>
+  <div class="w-full py-4 flex justify-center items-center">
+    <div
+      class="w-full max-w-2xl min-h-fit flex flex-col justify-center items-center gap-4 p-4 rounded-3xl border-2 border-slate-500 bg-slate-500/20"
+    >
+      <span class="material-icons-rounded extra-large text-slate-500"
+        >info_outline</span
+      >
+      <div class="text-center">
+        <Text as="h2">You have no saved notes</Text>
+      </div>
+      <div class="text-center text-slate-500">
+        <Text as="p"
+          >Tap the New Note button or the
+          <span class="material-icons-rounded small">add</span> icon to create one
+          and get started</Text
+        >
       </div>
     </div>
   </div>
-  <div />
 </main>

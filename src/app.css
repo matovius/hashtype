@@ -25,3 +25,19 @@
   -moz-osx-font-smootihng: grayscale;
   font-feature-settings: "liga";
 }
+
+.material-icons-rounded.small {
+  font-size: 20px;
+}
+
+.material-icons-rounded.medium {
+  font-size: 32px;
+}
+
+.material-icons-rounded.large {
+  font-size: 40px;
+}
+
+.material-icons-rounded.extra-large {
+  font-size: 48px;
+}
