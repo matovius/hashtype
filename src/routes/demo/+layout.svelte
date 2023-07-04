@@ -70,90 +70,65 @@
   }
 </script>
 
-<div class="app">
+<div class="min-h-screen">
   <header
-    class="w-full flex justify-between items-center border-b-2 border-slate-500 bg-slate-100 dark:bg-slate-900"
+    class="sticky top-0 w-full flex justify-between items-center bg-gradient-to-b from-slate-50 via-slate-50/90 to-transparent dark:from-slate-950 dark:via-slate-950/90 dark:to-transparent"
   >
-    <div class="p-2 flex justify-center items-center gap-2">
-      <div class="hidden md:inline-block">
-        <Button
-          startIcon="add"
-          textLabel="New Note"
-          size="medium"
-          variant="primary"
-        />
-      </div>
-      <div class="inline-block md:hidden">
-        <IconButton
-          icon="add"
-          tooltip="New Note"
-          size="medium"
-          variant="primary"
-        />
-      </div>
-      <nav class="flex justify-center items-center gap-2">
-        <ul class="hidden md:flex justify-center items-center gap-2">
-          <li>
-            <LinkButton
-              link="/demo/folders"
-              startIcon="folder_open"
-              textLabel="Folders"
-              size="medium"
-              variant="secondary"
-            />
-          </li>
-          <li>
-            <LinkButton
-              link="/demo/notepad"
-              startIcon="draw"
-              textLabel="Notepad"
-              size="medium"
-              variant="secondary"
-            />
-          </li>
-          <li>
-            <LinkButton
-              link="/demo/trash"
-              startIcon="delete_outline"
-              textLabel="Trash"
-              size="medium"
-              variant="error"
-            />
-          </li>
-        </ul>
-        <ul class="flex md:hidden justify-center items-center gap-2">
-          <li>
-            <LinkIconButton
-              link="/demo/folders"
-              icon="folder_open"
-              tooltip="Folders"
-              size="medium"
-              variant="secondary"
-            />
-          </li>
-          <li>
-            <LinkIconButton
-              link="/demo/notepad"
-              icon="draw"
-              tooltip="Notepad"
-              size="medium"
-              variant="secondary"
-            />
-          </li>
-          <li>
-            <LinkIconButton
-              link="/demo/trash"
-              icon="delete_outline"
-              tooltip="Trash"
-              size="medium"
-              variant="error"
-            />
-          </li>
-        </ul>
-      </nav>
-      <div />
-    </div>
-    <div class="p-2 flex justify-center items-center gap-2">
+    <nav class="w-full p-4 flex justify-between items-center gap-2">
+      <ul class="flex justify-center items-center gap-2">
+        <li class="hidden md:inline-block">
+          <Button
+            startIcon="add"
+            textLabel="New Note"
+            size="medium"
+            variant="primary"
+          />
+        </li>
+        <li class="inline-block md:hidden">
+          <IconButton
+            icon="add"
+            tooltip="New Note"
+            size="medium"
+            variant="primary"
+          />
+        </li>
+        <li class="inline-block lg:hidden">
+          <LinkIconButton
+            link="/demo/notepad"
+            icon="draw"
+            tooltip="Notepad"
+            size="medium"
+            variant="secondary"
+          />
+        </li>
+        <li class="inline-block lg:hidden">
+          <LinkIconButton
+            link="/demo/trash"
+            icon="delete_outline"
+            tooltip="Trash"
+            size="medium"
+            variant="error"
+          />
+        </li>
+        <li class="hidden lg:inline-block">
+          <LinkButton
+            link="/demo/notepad"
+            startIcon="draw"
+            textLabel="Notepad"
+            size="medium"
+            variant="secondary"
+          />
+        </li>
+        <li class="hidden lg:inline-block">
+          <LinkButton
+            link="/demo/trash"
+            startIcon="delete_outline"
+            textLabel="Trash"
+            size="medium"
+            variant="error"
+          />
+        </li>
+      </ul>
       <div class="relative">
         <IconButton
           icon="account_circle"
@@ -162,20 +137,7 @@
           variant="secondary"
         />
       </div>
-    </div>
+    </nav>
   </header>
   <slot />
-  <footer class="w-full bg-slate-800">
-    <div />
-  </footer>
-  <NewNoteDialog />
 </div>
-
-<style>
-  .app {
-    width: 100vw;
-    height: 100vh;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-  }
-</style>
