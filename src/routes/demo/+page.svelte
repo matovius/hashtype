@@ -8,9 +8,7 @@
 </svelte:head>
 
 <main class="w-full h-full flex flex-col overflow-y-auto px-4">
-  <div
-    class="w-full py-4 flex justify-between items-center gap-4 border-b-2 border-slate-500"
-  >
+  <div class="w-full py-4 flex justify-between items-center gap-4">
     <div>
       <Text as="h1">Demo</Text>
     </div>
