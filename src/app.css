@@ -1,7 +1,7 @@
 @import "@fontsource/inter";
 @import "@fontsource/montserrat";
 @import "@fontsource/mononoki";
-@import "fontsource/material-icons-round";
+@import "@fontsource/material-icons-round";
 
 @tailwind base;
 @tailwind components;
