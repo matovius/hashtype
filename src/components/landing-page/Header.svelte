@@ -52,7 +52,7 @@
         <LinkButton
           link="/demo"
           textLabel="Start Demo"
-          size="medium"
+          size="small"
           variant="primary"
         />
       </nav>
