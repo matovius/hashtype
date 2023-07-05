@@ -22,10 +22,6 @@
 
 <header
   class="
-    fixed
-    top-0
-    left-0
-    right-0
     p-4
     border-b-2
     border-slate-500
