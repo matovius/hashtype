@@ -41,7 +41,7 @@
       </div>
     </div>
     <div class="flex justify-center items-center gap-4">
-      <nav class="flex justify-center items-center">
+      <nav class="flex justify-center items-center gap-4">
         <ul class="flex justify-center items-center gap-4">
           {#each navItems as navItem}
             <li>
@@ -49,13 +49,13 @@
             </li>
           {/each}
         </ul>
+        <LinkButton
+          link="/demo"
+          textLabel="Start Demo"
+          size="medium"
+          variant="primary"
+        />
       </nav>
-      <LinkButton
-        link="/demo"
-        textLabel="Start Demo"
-        size="medium"
-        variant="primary"
-      />
     </div>
   </div>
 </header>
