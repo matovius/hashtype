@@ -23,7 +23,7 @@
 <header
   class="
     p-4
-    border-b-2
+    border-b
     border-slate-500
     bg-slate-100 dark:bg-slate-900
     flex
