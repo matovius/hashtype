@@ -3,6 +3,7 @@
   import "../app.css";
   import logo from "$lib/images/hashtype-logo.png";
 
+  // TODO: Solve bug causing light mode to not work correctly
   let isDarkMode: boolean = false;
 
   if (browser) {
