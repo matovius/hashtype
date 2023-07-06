@@ -1,6 +1,21 @@
 <script lang="ts">
+  import { browser } from "$app/environment";
   import "../app.css";
   import logo from "$lib/images/hashtype-logo.png";
+
+  let isDarkMode: boolean = false;
+
+  if (browser) {
+    const root: HTMLElement = document.documentElement;
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      root.classList.add("dark");
+      isDarkMode = true;
+    } else {
+      root.classList.remove("dark");
+      isDarkMode = false;
+    }
+    isDarkMode;
+  }
 </script>
 
 <svelte:head>
