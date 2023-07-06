@@ -61,12 +61,12 @@
 >
   <div class="w-full max-w-5xl px-4 py-10 flex flex-col gap-12 sm:flex-row">
     <div
-      class="w-full flex flex-col justify-between sm:justify-center items-center gap-6"
+      class="w-full flex flex-col justify-between sm:justify-center items-center gap-8"
     >
       <div class="w-12 aspect-square text-sky-100" title="App icon goes here">
         <HashtypeLogo />
       </div>
-      <ThemeSwitcher size="large" />
+      <ThemeSwitcher size="medium" />
     </div>
     <div class="w-full flex justify-between align-center">
       <div class="w-full">

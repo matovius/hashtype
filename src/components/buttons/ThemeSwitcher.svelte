@@ -1,8 +1,5 @@
 <script lang="ts">
   import { browser } from "$app/environment";
-  import SunIcon from "../icons/SunIcon.svelte";
-  import MoonIcon from "../icons/MoonIcon.svelte";
-  import ComputerDesktopIcon from "../icons/ComputerDesktopIcon.svelte";
   import IconButton from "./IconButton.svelte";
 
   export let size: "small" | "medium" | "large" = "small";
