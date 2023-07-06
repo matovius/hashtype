@@ -49,7 +49,7 @@
   <main class="flex flex-col justify-center">
     <section
       id="hero-section"
-      class="text-slate-100 w-full h-full p-20 bg-slate-900 flex flex-col justify-start items-center gap-10 relative"
+      class="text-slate-100 w-full h-full p-20 flex flex-col justify-start items-center gap-10 radial-gradient relative"
     >
       <div class="w-full max-w-5xl flex flex-col items-center gap-8 pt-20">
         <div
@@ -80,13 +80,13 @@
       id="features"
       class="w-full px-6 py-24 flex justify-center items-center"
     >
-      <div class="w-full h-full max-w-5xl flex flex-col gap-6">
-        <div class="text-center">
-          <Text as="h2">Features</Text>
+      <div class="w-full h-full max-w-5xl flex flex-col items-center gap-6">
+        <div class="text-center max-w-lg">
+          <Text as="h2">A Fine Set Of Features For Your Productivity</Text>
         </div>
 
         <div
-          class="w-full flex gap-6 flex-wrap py-6 justify-center items-center"
+          class="w-full py-6 flex flex-wrap justify-center items-center gap-6"
         >
           {#each features as feature}
             <article
@@ -102,3 +102,9 @@
   </main>
   <Footer />
 </div>
+
+<style>
+  .radial-gradient {
+    background: radial-gradient(circle, #64748b85, #020617 70%);
+  }
+</style>
