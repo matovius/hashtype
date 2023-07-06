@@ -41,7 +41,7 @@
 </script>
 
 <svelte:head>
-  <title>Hashtype: A Markdown Text Editor Made With Svelte</title>
+  <title>Hashtype: A Minimal Markdown Text Editor</title>
 </svelte:head>
 
 <div>
