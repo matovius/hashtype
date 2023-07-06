@@ -48,18 +48,21 @@
   <IconButton
     icon="light_mode"
     {size}
+    variant="secondary"
     on:click={toggleLightTheme}
     tooltip="Toggle Light Mode"
   />
   <IconButton
     icon="dark_mode"
     {size}
+    variant="secondary"
     on:click={toggleDarkTheme}
     tooltip="Toggle Dark Mode"
   />
   <IconButton
     icon="computer"
     {size}
+    variant="secondary"
     on:click={togglePreferredTheme}
     tooltip="Toggle System Default"
   />
