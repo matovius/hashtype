@@ -99,8 +99,10 @@
     <div
       class="w-full max-w-5xl p-4 flex flex-col gap-2 sm:flex-row sm:justify-between"
     >
-      <Text as="legend">Copyright 2023, Hashtype. All Rights Reserved</Text>
-      <Text as="legend">Made with passion, and SvelteKit</Text>
+      <Text as="legend"
+        >&copy; Copyright 2023, Hashtype. All Rights Reserved</Text
+      >
+      <Text as="legend">Made with passion, SvelteKit, and DaisyUI</Text>
     </div>
   </div>
 </footer>
