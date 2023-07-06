@@ -1,7 +1,6 @@
 <script lang="ts">
   import Header from "../components/landing-page/Header.svelte";
   import Footer from "../components/landing-page/Footer.svelte";
-  import PricingCard from "../components/landing-page/PricingCard.svelte";
   import Link from "../components/navigation/Link.svelte";
   import Text from "../components/typography/Text.svelte";
   import LinkButton from "../components/buttons/LinkButton.svelte";
@@ -97,40 +96,6 @@
               <Text as="p">{feature.description}</Text>
             </article>
           {/each}
-        </div>
-      </div>
-    </section>
-    <section
-      id="pricing"
-      class="w-full px-6 py-24 flex justify-center items-center"
-    >
-      <div class="w-full h-full max-w-5xl flex flex-col gap-6">
-        <div class="text-center">
-          <Text as="h2">Pricing</Text>
-        </div>
-
-        <div
-          class="w-full flex gap-6 flex-wrap py-6 justify-center items-center"
-        >
-          <PricingCard
-            cardID="demo-pricing-card"
-            variant="secondary"
-            heading="Demo"
-            pricePoint="Free"
-            description="No account creation needed"
-            ctaText="Start"
-            ctaLink="/demo"
-            ctaVariant="secondary"
-          />
-          <PricingCard
-            cardID="basic-pricing-card"
-            variant="primary"
-            heading="Basic"
-            pricePoint="Soon"
-            description="This tier s coming soon"
-            ctaText="Coming Soon"
-            isInert
-          />
         </div>
       </div>
     </section>
