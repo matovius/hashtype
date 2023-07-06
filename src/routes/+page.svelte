@@ -90,10 +90,14 @@
         >
           {#each features as feature}
             <article
-              class="transition w-80 h-40 p-4 flex flex-col gap-4 rounded-2xl border-2 border-slate-500 bg-slate-100 dark:bg-slate-900 hover:scale-110"
+              class="card card-normal card-bordered border-slate-500 min-w-min w-full max-w-sm min-h-[320px] bg-slate-500/20"
             >
-              <Text as="h5">{feature.name}</Text>
-              <Text as="p">{feature.description}</Text>
+              <div class="card-title pt-4 px-4 justify-center">
+                <Text as="h5">{feature.name}</Text>
+              </div>
+              <div class="card-body">
+                <Text as="p">{feature.description}</Text>
+              </div>
             </article>
           {/each}
         </div>
