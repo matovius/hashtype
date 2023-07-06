@@ -49,7 +49,7 @@
   <main class="flex flex-col justify-center">
     <section
       id="hero-section"
-      class="text-slate-100 w-full h-full p-20 flex flex-col justify-start items-center gap-10 relative"
+      class="w-full h-full px-6 py-12 flex flex-col justify-start items-center gap-10 relative"
     >
       <div class="w-full max-w-5xl flex flex-col items-center gap-8 pt-20">
         <div
@@ -71,14 +71,14 @@
           />
         </div>
         <div
-          class="transition w-full min-w-[320px] max-w-xl aspect-video border-2 border-slate-500 bg-slate-500/20 rounded-2xl overflow-hidden hover:scale-110"
+          class="transition w-full min-w-[320px] max-w-xl aspect-video bg-slate-500/20 rounded-2xl overflow-hidden"
           title="Hero image goes here"
         />
       </div>
     </section>
     <section
       id="features"
-      class="w-full px-6 py-24 flex justify-center items-center"
+      class="w-full px-6 py-12 flex justify-center items-center"
     >
       <div class="w-full h-full max-w-5xl flex flex-col items-center gap-6">
         <div class="text-center max-w-lg">
@@ -90,9 +90,9 @@
         >
           {#each features as feature}
             <article
-              class="card card-normal card-bordered border-slate-500 min-w-min w-full max-w-sm min-h-[320px] bg-slate-500/20"
+              class="card card-normal min-w-min w-full max-w-sm bg-slate-500/20"
             >
-              <div class="card-title pt-4 px-4 justify-center">
+              <div class="card-title pt-4 px-4">
                 <Text as="h5">{feature.name}</Text>
               </div>
               <div class="card-body">
@@ -101,6 +101,13 @@
             </article>
           {/each}
         </div>
+        <LinkButton
+          link="/demo"
+          textLabel="Start Demo"
+          endIcon="chevron_right"
+          variant="primary"
+          size="large"
+        />
       </div>
     </section>
   </main>
