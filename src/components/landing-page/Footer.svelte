@@ -57,7 +57,7 @@
 </script>
 
 <footer
-  class="w-full bg-slate-900 text-slate-100 flex flex-col justify-center items-center"
+  class="w-full bg-slate-500 dark:bg-slate-900 flex flex-col justify-center items-center"
 >
   <div class="w-full max-w-5xl px-4 py-10 flex flex-col gap-12 sm:flex-row">
     <div
@@ -94,7 +94,7 @@
     </div>
   </div>
   <div
-    class="w-full flex justify-center items-center border-t-2 border-slate-500"
+    class="w-full flex justify-center items-center bg-slate-300 dark:bg-slate-700"
   >
     <div
       class="w-full max-w-5xl p-4 flex flex-col gap-2 sm:flex-row sm:justify-between"

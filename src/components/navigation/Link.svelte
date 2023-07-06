@@ -8,27 +8,26 @@
     | "secondary"
     | "success"
     | "warning"
-    | "error" = "secondary";
+    | "error"
+    | "neutral" = "neutral";
 
   let linkVariant: string;
 
-  if (variant === "primary") {
-    linkVariant = "text-sky-500 hover:text-sky-700 focus:text-sky-700";
+  if (variant === "neutral") {
+    linkVariant = "link-neutral";
+  } else if (variant === "primary") {
+    linkVariant = "link-primary";
   } else if (variant === "secondary") {
-    linkVariant = "text-slate-500 hover:text-slate-700 focus:text-slate-700";
+    linkVariant = "link-secondary";
   } else if (variant === "success") {
-    linkVariant =
-      "text-emerald-500 hover:text-emerald-700 focus:text-emerald-700";
+    linkVariant = "link-success";
   } else if (variant === "warning") {
-    linkVariant = "text-yellow-500 hover:text-yellow-700 focus:text-yellow-700";
+    linkVariant = "link-warning";
   } else if (variant === "error") {
-    linkVariant = "text-rose-500 hover:text-rose-700 focus:text-rose-700";
+    linkVariant = "link-error";
   }
 </script>
 
-<a
-  href={route}
-  class={`transition outline-none underline underline-offset-2 decoration-2 ${linkVariant}`}
->
+<a href={route} class={`link ${linkVariant}`}>
   <Text as="span">{label}</Text>
 </a>
