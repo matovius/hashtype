@@ -1,31 +1,12 @@
 <script lang="ts">
-  import Link from "../navigation/Link.svelte";
   import Text from "../typography/Text.svelte";
   import HashtypeLogo from "../icons/HashtypeLogo.svelte";
   import LinkButton from "../buttons/LinkButton.svelte";
-
-  interface NavLink {
-    name: string;
-    route: string;
-  }
-  const navItems: NavLink[] = [
-    {
-      name: "Features",
-      route: "#features",
-    },
-    {
-      name: "Pricing",
-      route: "#pricing",
-    },
-  ];
 </script>
 
 <header
   class="
     p-4
-    border-b
-    border-slate-500
-    bg-slate-100 dark:bg-slate-900
     flex
     justify-center
     items-center
@@ -42,13 +23,6 @@
     </div>
     <div class="flex justify-center items-center gap-4">
       <nav class="flex justify-center items-center gap-4">
-        <ul class="flex justify-center items-center gap-4">
-          {#each navItems as navItem}
-            <li>
-              <Link label={navItem.name} route={navItem.route} />
-            </li>
-          {/each}
-        </ul>
         <LinkButton
           link="/demo"
           textLabel="Start Demo"
